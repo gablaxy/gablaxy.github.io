@@ -1,3 +1,3 @@
-# javascript-rss-feedreader
+# News aggregator website
 
-Version so that you can add multiple feeds
+Made to track news that I like.
