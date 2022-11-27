@@ -2,9 +2,10 @@
   const textarea = document.querySelector('#feed-textarea > ul');
 
   const datedujour = new Date();
+  console.log(datedujour);
   const datedujourmoins5 = day_minus_five();
-  document.querySelector('#date').innerHTML = datedujourmoins5.toDateString() + ' - ' + datedujour.toDateString();
-  let feeds = ['https://nouveaupartianticapitaliste.org/rss.xml','https://unioncommunistelibertaire.org/spip.php?page=backend'];
+  document.querySelector('#date').innerHTML = datedujourmoins5.toLocaleDateString() + ' - ' + datedujour.toLocaleDateString();
+  let feeds = ['https://nouveaupartianticapitaliste.org/rss.xml','https://unioncommunistelibertaire.org/spip.php?page=backend','http://mouvement-municipal.fr/feed/'];
 
   
 // for each feed in the feeds array we do the following

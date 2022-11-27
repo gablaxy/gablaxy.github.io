@@ -17,11 +17,17 @@
     <title>RSS News Feed</title>
 </head>
 <body>
-    <div id="canvas">
+    <div id="canvas" class="box" style="max-width: 800px;">
         <div id="heading">   
             <h3><img src="img/newspaper.png" alt="Image journal d'actualités"> RSS Feed Perso</h3>
             <h4 id="date"></h4>
         </div>
+
+        <nav>
+            <a id="about-nav" onclick="showContainer('feed-textarea');">Main</a>
+            <a id="projects-nav" onclick="showContainer('projects');">Politique</a>
+            <a id="contact-nav" onclick="showContainer('contact');">Programmation</a>
+        </nav>
 
         <div id="feed-textarea">
             <ul></ul>
@@ -29,5 +35,16 @@
     </div>
     <script src="https://static.sekandocdn.net/static/feednami/feednami-client-v1.1.js"></script>
     <script src="app.js"></script>
+    <script>
+        function showContainer(container) {
+            for (let i = 0; i < containers.length; i++) {
+                const sel = containers[i] === container;
+                document.getElementById(containers[i]).style.display = sel ? "block" : "none";
+                document.getElementById(containers[i] + "-nav").style.color = sel ? "var(--header-color)" : null;
+            }
+        }
+
+        showContainer("about");
+    </script>
 </body>
 </html>
