@@ -4,7 +4,7 @@
   const datedujour = new Date();
   const datedujourmoins5 = day_minus_five();
   document.querySelector('#date').innerHTML = datedujourmoins5.toDateString() + ' - ' + datedujour.toDateString();
-  let feeds = ['https://blog.python.org/feeds/posts/default?alt=rss', 'https://nouveaupartianticapitaliste.org/rss.xml','https://unioncommunistelibertaire.org/spip.php?page=backend'];
+  let feeds = ['https://nouveaupartianticapitaliste.org/rss.xml','https://unioncommunistelibertaire.org/spip.php?page=backend'];
 
   
 // for each feed in the feeds array we do the following

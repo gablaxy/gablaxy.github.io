@@ -10,7 +10,7 @@ html{
     background-color: #B88CEA;
     margin: 50px auto;
     padding: 40px;
-    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+    font-family: 'Poppins', 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
 }
 
 #heading{
@@ -22,6 +22,13 @@ h3{
     padding: 15px;
 
 }
+
+h3 img{
+    width: 50px;
+    height: 50px;
+    margin-right: 10px;
+}
+
 
 span{
     color: #614AD3;
