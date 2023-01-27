@@ -5,7 +5,7 @@
   console.log(datedujour);
   const datedujourmoins5 = day_minus_five();
   document.querySelector('#date').innerHTML = datedujourmoins5.toLocaleDateString() + ' - ' + datedujour.toLocaleDateString();
-  let feeds = ['https://nouveaupartianticapitaliste.org/rss.xml','https://unioncommunistelibertaire.org/spip.php?page=backend','http://mouvement-municipal.fr/feed/'];
+  let feeds = ['https://nouveaupartianticapitaliste.org/rss.xml','https://unioncommunistelibertaire.org/spip.php?page=backend','http://mouvement-municipal.fr/feed/','https://www.cnt-f.org/spip.php?page=backend','https://workingclasshistory.com/feed/','https://bibliothequelibertad.noblogs.org/feed/','http://mouvement-municipal.fr/feed/'];
 
   
 // for each feed in the feeds array we do the following
