@@ -1,11 +1,20 @@
+:root{
+    --background : #632F9E;
+    --background2 : #B88CEA;
+
+    --titres : #614AD3;
+    --hover : #E42C64;
+    --header-color : #632F9E;
+}
+
 html{
-    background-color: #632F9E;
+    background-color: var(--background);
 }
 
 #canvas{
     box-sizing: border-box;
-    width: 600px;
-    background-color: #B88CEA;
+    width: 1000px;
+    background-color: var(--background2);
     margin: 50px auto;
     padding: 40px;
     font-family: 'Poppins', 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
@@ -50,19 +59,24 @@ nav > a {
     color: revert;
 }
 
+nav > a:hover {
+    color: var(--hover);
+}
+
+
 /* */
 
 
 span{
-    color: #614AD3;
+    color: var(--titres);
 }
 
 #date{
-    color:#632F9E
+    color:var(--background);
 }
 
 ul {
-    color:#614AD3;
+    color:var(--titres);
     list-style: none;
     font-size: 16px;
     text-transform: capitalize;
@@ -76,7 +90,7 @@ ul a{
 }
 
 ul a:hover{
-    color:#E42C64;
+    color:var(--hover);
 }
 
 
