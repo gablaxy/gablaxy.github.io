@@ -1,23 +1,60 @@
 :root{
-    --background : #632F9E;
-    --background2 : #B88CEA;
+    --background : #2c2e30;
+    --boxes : #0000002a;
 
-    --titres : #614AD3;
+    --titres : #9162c7;
     --hover : #E42C64;
-    --header-color : #632F9E;
+    --texte : #bd91ef;
 }
+
 
 html{
     background-color: var(--background);
+    color: var(--texte);
+    font-family: 'Poppins', 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
 }
+
+header{
+    border-bottom: 1px solid var(--titres);
+}
+
+footer{
+    border-top: 1px solid var(--titres);
+    bottom: 0;
+}
+
+footer{
+    text-align: center;
+    padding: 10px;
+    color: var(--texte);
+}
+
+#webring-inner a{
+    color: var(--titres);
+    text-decoration: none;
+}
+
+#webring-inner a:hover{
+    color: var(--hover);
+}
+
+#webring-inner{
+    color: var(--texte);
+}
+
+.badges img{
+    height: 31px;
+    box-sizing: border-box;
+}
+
 
 #canvas{
     box-sizing: border-box;
-    width: 1000px;
-    background-color: var(--background2);
+    width: 700px;
+    background-color: var(--boxes);
     margin: 50px auto;
     padding: 40px;
-    font-family: 'Poppins', 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+    border-radius: 10px;
 }
 
 #heading{
@@ -29,6 +66,7 @@ h3{
     padding: 10px;
     padding-top: 0;
     padding-bottom: 0;
+    color: var(--titres);
 
 }
 
@@ -43,6 +81,36 @@ h3 img{
     margin-top: -20px;
 
 }
+
+#projects > div{
+    background-color: var(--boxes);
+    margin: 10px;
+    padding: 10px;
+    border-radius: 10px;
+}
+
+#pol > h4{
+    text-align: center;
+    font-size: 20px;
+    color: var(--titres);
+}
+
+.project-box{
+    text-align: center;
+}
+
+.project-box > h3{
+    margin-top: 0;
+    margin-bottom: 0;
+}
+
+.project-box > p{
+    padding: 10px;
+    margin-top: 0;
+    margin-bottom: 0;
+}
+
+
 
 /* Navbars */
 
@@ -72,7 +140,7 @@ span{
 }
 
 #date{
-    color:var(--background);
+    color:var(--texte);
 }
 
 ul {
@@ -84,7 +152,7 @@ ul {
 
 ul a{
     text-decoration: none;
-    color: black;
+    color: var(--texte);
     font-weight: 800;
     font-size: 1.2em;
 }
@@ -126,8 +194,7 @@ ul a:hover{
 
 button {
     font-size: 18px;
-    background-color: black;
-    color: white;
+    color: var(--texte);
     cursor: pointer;
     border: none;
     border-radius: 6px;

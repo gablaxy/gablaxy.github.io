@@ -29,7 +29,7 @@ let feeds = ['https://nouveaupartianticapitaliste.org/rss.xml','https://unioncom
           let date = new Date(entry.pubDate);
           if (date > day_minus_five()) { // if it's less than 5 days old we add it to the page
             let li = document.createElement('li');
-            li.innerHTML = `<h4>${nom_court}\t<a href="${entry.link}" target="_blank">${entry.title}</a></h4>`;
+            li.innerHTML = `<h4>${nom_court}\t-\t<a href="${entry.link}" target="_blank">${entry.title}</a></h4>`;
             textarea.appendChild(li);
           }
         });
@@ -61,12 +61,12 @@ let feeds = ['https://nouveaupartianticapitaliste.org/rss.xml','https://unioncom
 //https://toolkit.sekando.com/docs/en/feednami
 
 
-const containers = [ "main", "projects", "prog" ];
+const containers = [ "main", "projects", "pol" ];
 function showContainer(container) {
     for (let i = 0; i < containers.length; i++) {
         const sel = containers[i] === container;
         document.getElementById(containers[i]).style.display = sel ? "block" : "none";
-        document.getElementById(containers[i] + "-nav").style.color = sel ? "var(--header-color)" : null;
+        document.getElementById(containers[i] + "-nav").style.color = sel ? "var(--titres)" : null;
     }
 }
 
