@@ -1,10 +1,12 @@
 :root{
     --background : #2c2e30;
     --boxes : #0000002a;
+    --unboxes : #00000000;
 
     --titres : #9162c7;
     --hover : #E42C64;
-    --texte : #bd91ef;
+    --texte : #c296f5;
+    --separations : #9162c7;
 }
 
 
@@ -15,11 +17,11 @@ html{
 }
 
 header{
-    border-bottom: 1px solid var(--titres);
+    border-bottom: 1px solid var(--separations);
 }
 
 footer{
-    border-top: 1px solid var(--titres);
+    border-top: 1px solid var(--separations);
     bottom: 0;
 }
 
@@ -76,30 +78,16 @@ h3 img{
     margin-right: 10px;
 }
 
-#heading > h4{
-    padding-top: -20px;
-    margin-top: -20px;
-
-}
-
-#projects > div{
+.project-box{
+    text-align: center;
     background-color: var(--boxes);
     margin: 10px;
     padding: 10px;
     border-radius: 10px;
 }
 
-#pol > h4{
-    text-align: center;
-    font-size: 20px;
-    color: var(--titres);
-}
-
-.project-box{
-    text-align: center;
-}
-
 .project-box > h3{
+    color: var(--titres);
     margin-top: 0;
     margin-bottom: 0;
 }
@@ -108,6 +96,19 @@ h3 img{
     padding: 10px;
     margin-top: 0;
     margin-bottom: 0;
+    text-align: left;
+}
+
+hr{
+    width: 100%; 
+    height: 1px; 
+    background-color: var(--separations); 
+    border: none;
+}
+
+summary{
+    font-size: 20px;
+    color: var(--titres);
 }
 
 
@@ -139,8 +140,11 @@ span{
     color: var(--titres);
 }
 
-#date{
-    color:var(--texte);
+.date{
+    margin-top: 0;
+    text-align: center;
+    font-size: 20px;
+    color: var(--titres);
 }
 
 ul {
