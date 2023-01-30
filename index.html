@@ -70,15 +70,14 @@
         </div>
 
         <div id="params">
-            <input type="checkbox" id="dark-mode" onclick="darkMode()">
-            <label for="dark-mode">Dark mode</label>
-            <br>
-            <input type="checkbox" id="show-avatars" onclick="showAvatars()">
-            <label for="show-avatars">Show avatars</label>
-            <br>
-            <input type="text" id="feed-url" placeholder="Feed URL">
-            <button onclick="changeFeed()">Change feed</button>
-            <br>
+            <div class="box" id="add-feed">
+                <select id="feed-type">
+                    <option value="tech">Technos</option>
+                    <option value="pol">Politics</option>
+                </select>
+                <input type="text" id="feed-url" placeholder="Feed URL">
+                <button onclick="addFeed();">Add feed</button>
+            </div>
         </div>
     </div>
 

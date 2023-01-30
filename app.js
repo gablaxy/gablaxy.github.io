@@ -109,3 +109,29 @@ function showContainer(container) {
 }
 
 showContainer("main");
+
+function checkUrl(url){
+  try {
+    let url = new URL(url);
+  } catch (_) {
+    return false;
+  }
+  return true;
+}
+
+function addFeed(){
+  let selection = document.getElementById("feed-type").value;
+  let url = document.getElementById("feed-url").value;
+  if(checkUrl(url)){
+    if (selection == "pol"){
+        feeds.push(url);
+    } else if (selection == "tech"){
+        feeds_tech.push(url);
+    }
+    document.getElementById("feed-url").value = "";
+    document.getElementById("feed-url").placeholder = "URL ajoutée";
+  } else {
+    document.getElementById("feed-url").value = "";
+    document.getElementById("feed-url").placeholder = "URL invalide";
+  }
+}
