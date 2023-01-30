@@ -210,6 +210,15 @@ button:hover {
     color: red;
 }
 
+.links-wide{
+    display: inline-block;
+}
+
+.links-wide img{
+    width: 25px;
+    height: 25px;
+}
+
 
 /* Responsive */
 
