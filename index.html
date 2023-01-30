@@ -9,18 +9,17 @@
     <link rel="font" href="fonts/Poppins/Poppins-Black.ttf">
     
     <link rel="stylesheet" type="text/css" href="style.css">
-    <title>Ankou</title>
+    <title>Gablaxy</title>
 </head>
 <body>
     <header>
         <div id="heading">   
-            <h3>Ankou</h3>
+            <h3>gablaxy</h3>
         </div>
         <nav>
-            <a id="main-nav" onclick="showContainer('main');">Technos</a>
+            <a id="main-nav" onclick="showContainer('main');">About</a>
+            <a id="tech-nav" onclick="showContainer('tech');">Tech</a>
             <a id="projects-nav" onclick="showContainer('projects');">Projects</a>
-            <a id="pol-nav" onclick="showContainer('pol');">Politics</a>
-            <a id="params-nav" onclick="showContainer('params');">Parameters</a>
         </nav>
     </header>
     <div id="canvas" class="box" style="max-width: 1000px;">
@@ -61,54 +60,11 @@
                 </div>
             </details>
         </div>
-
-        <div id="pol">
-            <h4 id="date-pol" class="date"></h4>
-            <div id="feed-textarea-pol">
-                <ul></ul>
-            </div>
-        </div>
-
-        <div id="params">
-            <div class="box" id="add-feed">
-                <select id="feed-type">
-                    <option value="tech">Technos</option>
-                    <option value="pol">Politics</option>
-                </select>
-                <input type="text" id="feed-url" placeholder="Feed URL">
-                <button onclick="addFeed();">Add feed</button>
-            </div>
-        </div>
     </div>
-
     <footer>
-        <div class="badges">
-            <img src="badges/best_viewed.gif" alt="badge that says 'best viewed with any browser, any os'">
-            <a href="https://minecraft.net" target="_blank" title="minecraft is a cool game imo"><img src="badges/minecraft.gif" alt="minecraft"></a>
-            <img src="badges/phonechump.gif" alt="phone chump">
-            <a href="https://cyber.dabamos.de/88x31" target="_blank"><img src="badges/88x31.gif" alt="88x31" title="baaaadges"></a>
-            <img src="badges/piratage.gif" alt="piracy now" title="piracy is swag and you should do it">
-            <img src="badges/antinft.gif" alt="this is an anti-nft site">
-            <a href="https://yesterweb.org/no-to-web3/"><img src="badges/saynotoweb3.gif" alt="keep the web free, say no to web3" title="fuck web 3"></a>
-            <img src="badges/nocookie.gif" alt="no cookies">
-            <img src="badges/internetprivacy.gif" alt="internet privacy pls">
-            <img src="badges/LocalNetwork.gif" alt="screw ya'll i'm going back to my local network" title="the internet was a mistake (except for the cool music and cat gifs)">
-        </div>
-
-
-        <span id="webring">
-            <br>
-            <b class="black" id="webring-inner">
-                <a href="" rel="prev noreferrer external">&lt; avant</a>
-                 / part of the 
-                <a rel="external noreferrer" href="index.html">nom du ring</a>
-                  webring / 
-                <a href="" rel="next noreferrer external">après &gt;</a>
-            </b>
-            <br>
-        </span>
-        
+        <p>gablaxy</p>
     </footer>
+
     <script src="https://static.sekandocdn.net/static/feednami/feednami-client-v1.1.js"></script>
     <script src="app.js"></script>
 </body>
