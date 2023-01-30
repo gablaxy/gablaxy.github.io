@@ -11,7 +11,7 @@ const datedujourmoins14 = day_minus_14();
 document.querySelector('#date-pol').innerHTML = datedujourmoins5.toLocaleDateString() + ' - ' + datedujour.toLocaleDateString();
 document.querySelector('#date-tech').innerHTML = datedujourmoins14.toLocaleDateString() + ' - ' + datedujour.toLocaleDateString();
 
-let feeds_tech = ['https://feeds.feedburner.com/PythonInsider','https://www.thefreecountry.com/thefreecountry.xml','https://github.com/tachiyomiorg/tachiyomi/releases.atom'];
+let feeds_tech = ['https://feeds.feedburner.com/PythonInsider','https://www.thefreecountry.com/thefreecountry.xml','https://github.com/tachiyomiorg/tachiyomi/releases.atom','https://www.php.net/releases/feed.php','https://maia.crimew.gay/feed.xml','https://blog.oat.zone/rss/','https://som.codes/blog/rss.xml','https://seirdy.one/posts/atom.xml','https://www.lloydatkinson.net/rss.xml','https://bloginamatrix.xyz/feed.xml','https://yesterweb.org/zine/issue-05/feed.rss'];
 let feeds = ['https://nouveaupartianticapitaliste.org/rss.xml','https://unioncommunistelibertaire.org/spip.php?page=backend','http://mouvement-municipal.fr/feed/','https://www.cnt-f.org/spip.php?page=backend','https://workingclasshistory.com/feed/','https://bibliothequelibertad.noblogs.org/feed/'];
 
 let newarticle_pol = false;
@@ -45,6 +45,7 @@ let newarticle_pol = false;
 
   feeds_tech.forEach(function (url) {
     feednami.load(url).then(feed => {
+      console.log(feed.meta.title)
       let newarticle = false; 
       feed.entries.forEach(entry => { // we check if there is at least one article that is newer than 5 days
           let date = new Date(entry.pubDate);
@@ -56,7 +57,7 @@ let newarticle_pol = false;
 
       if (newarticle) { // if there is at least one article that is newer than 5 days we display the feed
         feed.entries.forEach(entry => {
-          let nom_court = nom_raccourci(feed.meta.title);
+          let nom_court = feed.meta.title;
           let date = new Date(entry.pubDate);
           if (date > day_minus_14()) { // if it's less than 5 days old we add it to the page
             let li = document.createElement('li');
@@ -76,7 +77,13 @@ let newarticle_pol = false;
       "Confédération nationale du travail" : "CNT",
       "Working Class History" : "WCH",
       "Bibliothèque anarchiste Libertad" : "BAL",
-      "NPA" : "NPA"
+      "NPA" : "NPA",
+      "Python Insider" : "Python",
+      "The Free Country" : "The Free Country",
+      "Release notes from Tachiyomi" : "Tachiyomi",
+      "PHP.net releases" : "PHP",
+      "maia blog" : "maia blog",
+
     }
 
     return list_noms[title];
@@ -110,28 +117,15 @@ function showContainer(container) {
 
 showContainer("main");
 
-function checkUrl(url){
-  try {
-    let url = new URL(url);
-  } catch (_) {
-    return false;
-  }
-  return true;
-}
-
 function addFeed(){
   let selection = document.getElementById("feed-type").value;
   let url = document.getElementById("feed-url").value;
-  if(checkUrl(url)){
-    if (selection == "pol"){
-        feeds.push(url);
-    } else if (selection == "tech"){
-        feeds_tech.push(url);
-    }
-    document.getElementById("feed-url").value = "";
-    document.getElementById("feed-url").placeholder = "URL ajoutée";
-  } else {
-    document.getElementById("feed-url").value = "";
-    document.getElementById("feed-url").placeholder = "URL invalide";
+  if (selection == "pol"){
+      feeds.push(url);
+  } else if (selection == "tech"){
+      feeds_tech.push(url);
   }
+  document.getElementById("feed-url").value = "";
+  console.log(feeds);
+  console.log(feeds_tech);
 }
