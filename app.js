@@ -50,6 +50,7 @@ let feeds_tech = ['https://feeds.feedburner.com/PythonInsider','https://www.thef
       "breakfast oatmeal" : "oatmeal",
       "David Walsh Blog" : "D.Walsh",
       "Posts on Seirdy's Home" : "Seirdy"
+      "Alt" : "Yesterweb mag"
     }
 
     return list_noms[title];
