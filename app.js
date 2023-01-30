@@ -8,7 +8,7 @@ const datedujourmoins14 = day_minus_14();
   
 document.querySelector('#date-tech').innerHTML = datedujourmoins14.toLocaleDateString() + ' - ' + datedujour.toLocaleDateString();
 
-let feeds_tech = ['https://feeds.feedburner.com/PythonInsider','https://www.thefreecountry.com/thefreecountry.xml','https://github.com/tachiyomiorg/tachiyomi/releases.atom','https://www.php.net/releases/feed.php','https://maia.crimew.gay/feed.xml','https://blog.oat.zone/rss/','https://som.codes/blog/rss.xml','https://seirdy.one/posts/atom.xml','https://www.lloydatkinson.net/rss.xml','https://bloginamatrix.xyz/feed.xml','https://yesterweb.org/zine/issue-05/feed.rss','https://davidwalsh.name/feed'];
+let feeds_tech = ['https://feeds.feedburner.com/PythonInsider','https://www.thefreecountry.com/thefreecountry.xml','https://github.com/tachiyomiorg/tachiyomi/releases.atom','https://www.php.net/releases/feed.php','https://maia.crimew.gay/feed.xml','https://blog.oat.zone/rss/','https://seirdy.one/posts/atom.xml','https://www.lloydatkinson.net/rss.xml','https://bloginamatrix.xyz/feed.xml','https://yesterweb.org/zine/issue-05/feed.rss','https://www.stephendiehl.com/feed.rss','https://invisibleup.com/atom.xml','https://fale.io/index.xml','https://sadgrl.online/feed.xml','https://now.auzziejay.com/blog/index.php?feed/atom'];
 
 
   feeds_tech.forEach(function (url) {
@@ -48,9 +48,13 @@ let feeds_tech = ['https://feeds.feedburner.com/PythonInsider','https://www.thef
       "Lloyd Atkinson's Articles" : "L.Atkinson",
       "Blog in a Matrix" : "Blog Matrix",
       "breakfast oatmeal" : "oatmeal",
-      "David Walsh Blog" : "D.Walsh",
       "Posts on Seirdy's Home" : "Seirdy",
-      "Alt" : "Yesterweb mag"
+      "Alt" : "Yesterweb mag",
+      "Stephen Diehl" : "Stephen Diehl",
+      "InvisibleUp" : "InvisibleUp",
+      "(Fabio Alessandro Locati|Fale)'s blog" : "Fale",
+      "Auzzie Jay's Blog" : "Auzzie Jay",
+      "sadgrl.online" : "sadgrl"
     }
 
     return list_noms[title];
