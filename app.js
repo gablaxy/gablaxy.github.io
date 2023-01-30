@@ -11,7 +11,7 @@ const datedujourmoins14 = day_minus_14();
 document.querySelector('#date-pol').innerHTML = datedujourmoins5.toLocaleDateString() + ' - ' + datedujour.toLocaleDateString();
 document.querySelector('#date-tech').innerHTML = datedujourmoins14.toLocaleDateString() + ' - ' + datedujour.toLocaleDateString();
 
-let feeds_tech = ['https://feeds.feedburner.com/PythonInsider','https://www.thefreecountry.com/thefreecountry.xml','https://github.com/tachiyomiorg/tachiyomi/releases.atom','https://www.php.net/releases/feed.php','https://maia.crimew.gay/feed.xml','https://blog.oat.zone/rss/','https://som.codes/blog/rss.xml','https://seirdy.one/posts/atom.xml','https://www.lloydatkinson.net/rss.xml','https://bloginamatrix.xyz/feed.xml','https://yesterweb.org/zine/issue-05/feed.rss'];
+let feeds_tech = ['https://feeds.feedburner.com/PythonInsider','https://www.thefreecountry.com/thefreecountry.xml','https://github.com/tachiyomiorg/tachiyomi/releases.atom','https://www.php.net/releases/feed.php','https://maia.crimew.gay/feed.xml','https://blog.oat.zone/rss/','https://som.codes/blog/rss.xml','https://seirdy.one/posts/atom.xml','https://www.lloydatkinson.net/rss.xml','https://bloginamatrix.xyz/feed.xml','https://yesterweb.org/zine/issue-05/feed.rss','https://davidwalsh.name/feed'];
 let feeds = ['https://nouveaupartianticapitaliste.org/rss.xml','https://unioncommunistelibertaire.org/spip.php?page=backend','http://mouvement-municipal.fr/feed/','https://www.cnt-f.org/spip.php?page=backend','https://workingclasshistory.com/feed/','https://bibliothequelibertad.noblogs.org/feed/'];
 
 let newarticle_pol = false;
