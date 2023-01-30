@@ -75,16 +75,3 @@ function showContainer(container) {
 }
 
 showContainer("main");
-
-function addFeed(){
-  let selection = document.getElementById("feed-type").value;
-  let url = document.getElementById("feed-url").value;
-  if (selection == "pol"){
-      feeds.push(url);
-  } else if (selection == "tech"){
-      feeds_tech.push(url);
-  }
-  document.getElementById("feed-url").value = "";
-  console.log(feeds);
-  console.log(feeds_tech);
-}

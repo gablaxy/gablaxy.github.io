@@ -131,43 +131,6 @@ nav > a:hover {
     color: var(--hover);
 }
 
-#add-feed{
-    text-align: center;
-    border-radius: 10px;
-    padding-top: 0;
-    padding-bottom: 10px;
-    max-height: 27px;
-}
-
-#add-feed > select{
-    border-radius: 10px;
-    border: 1px solid var(--separations);
-    padding: 5px;
-    margin: 5px;
-}
-
-
-#add-feed > input{
-    border-radius: 10px;
-    border: 1px solid var(--separations);
-    padding: 5px;
-    margin: 5px;
-    width: 300px;
-}
-
-#add-feed > button{
-    border-radius: 10px;
-    border: 1px solid var(--separations);
-    padding: 5px;
-    margin: 5px;
-    color : black;
-}
-
-#add-feed > button:hover{
-    color : var(--hover);
-}
-
-
 
 /* */
 
@@ -245,4 +208,19 @@ button {
 
 button:hover {
     color: red;
+}
+
+
+/* Responsive */
+
+@media screen and (max-width: 700px) {
+    #canvas{
+        width: 100%;
+    }
+
+    #date{
+        font-size: 10px;
+    }
+
+
 }
