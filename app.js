@@ -49,7 +49,7 @@ let feeds_tech = ['https://feeds.feedburner.com/PythonInsider','https://www.thef
       "Blog in a Matrix" : "Blog Matrix",
       "breakfast oatmeal" : "oatmeal",
       "David Walsh Blog" : "D.Walsh",
-      "Posts on Seirdy's Home" : "Seirdy"
+      "Posts on Seirdy's Home" : "Seirdy",
       "Alt" : "Yesterweb mag"
     }
 
