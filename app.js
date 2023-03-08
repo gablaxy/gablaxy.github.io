@@ -22,7 +22,7 @@ let feeds_tech = ['https://feeds.feedburner.com/PythonInsider','https://www.thef
 
       if (newarticle) { // if there is at least one article that is newer than 5 days we display the feed
         feed.entries.forEach(entry => {
-          let nom_court = feed.meta.title;
+          let nom_court = nom_raccourci(feed.meta.title);
           let date = new Date(entry.pubDate);
           if (date > day_minus_14()) { // if it's less than 5 days old we add it to the page
             let li = document.createElement('li');
