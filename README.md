@@ -1,1 +1,1 @@
-# Basic website for personnal use
+# Webring base
