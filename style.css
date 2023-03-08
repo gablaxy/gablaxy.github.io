@@ -30,19 +30,6 @@ footer{
     color: var(--texte);
 }
 
-#webring-inner a{
-    color: var(--titres);
-    text-decoration: none;
-}
-
-#webring-inner a:hover{
-    color: var(--hover);
-}
-
-#webring-inner{
-    color: var(--texte);
-}
-
 .badges img{
     height: 31px;
     box-sizing: border-box;
