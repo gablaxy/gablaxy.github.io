@@ -40,16 +40,14 @@ class Webring extends HTMLElement {
                 const matchedSiteIndex = sites.findIndex(
                     (site) => site.name === currentSite
                 );
-                const matchedSite = sites[matchedSiteIndex];
+                console.log(sites);
 
                 // Va chercher le site précédent dans le json
-                const previousSiteIndex = matchedSiteIndex - 1;
+                let previousSiteIndex = matchedSiteIndex - 1;
                 if(previousSiteIndex < 0)previousSiteIndex = sites.length - 1;
                 
-                const nextSiteIndex = matchedSiteIndex + 1;
+                let nextSiteIndex = matchedSiteIndex + 1;
                 if(nextSiteIndex >= sites.length)nextSiteIndex = 0;
-
-                const randomSiteIndex = Math.floor(Math.random() * sites.length);
 
                 const content = `
                 <a href="${sites[previousSiteIndex].url}" rel="prev noreferrer external">&lt; avant</a>

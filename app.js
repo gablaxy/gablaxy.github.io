@@ -2,8 +2,6 @@ const textarea_tech = document.querySelector('#feed-textarea-tech > ul');
 const datedujour = new Date();
 const containers = [ "main", "tech", "projects"];
 
-console.log(datedujour);
-
 const datedujourmoins14 = day_minus_14();
   
 document.querySelector('#date-tech').innerHTML = datedujourmoins14.toLocaleDateString() + ' - ' + datedujour.toLocaleDateString();
@@ -13,7 +11,6 @@ let feeds_tech = ['https://feeds.feedburner.com/PythonInsider','https://www.thef
 
   feeds_tech.forEach(function (url) {
     feednami.load(url).then(feed => {
-      console.log(feed.meta.title)
       let newarticle = false; 
       feed.entries.forEach(entry => { // we check if there is at least one article that is newer than 5 days
           let date = new Date(entry.pubDate);
