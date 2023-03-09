@@ -40,9 +40,11 @@ class Webring extends HTMLElement {
             .then((sites) => {
                 // Va chercher le site actuel dans le json
                 const matchedSiteIndex = sites.findIndex(
-                    (site) => site.url == currentSite
-                );
-                console.log(sites);
+                    (site) => site.url === currentSite
+                )
+                console.log(matchedSiteIndex)
+                const matchedSite = sites[matchedSiteIndex];
+                console.log(matchedSite)
 
                 // Va chercher le site précédent dans le json
                 let previousSiteIndex = matchedSiteIndex - 1;
@@ -54,7 +56,7 @@ class Webring extends HTMLElement {
                 const content = `
                 <a href="${sites[previousSiteIndex].url}" rel="prev noreferrer external">&lt; avant</a>
                 /  
-               <a rel="external noreferrer" href="current">current</a>
+               <a rel="external noreferrer" href="${sites[matchedSiteIndex].url}">${sites[matchedSiteIndex].name}</a>
                  / 
                <a href="${sites[nextSiteIndex].url}" rel="next noreferrer external">après &gt;</a>
                 `;
