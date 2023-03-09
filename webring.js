@@ -39,7 +39,7 @@ class Webring extends HTMLElement {
             .then((sites) => {
                 // Va chercher le site actuel dans le json
                 const matchedSiteIndex = sites.findIndex(
-                    (site) => site.name == currentSite
+                    (site) => site.url == currentSite
                 );
                 console.log(sites);
 
