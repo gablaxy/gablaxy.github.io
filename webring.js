@@ -52,7 +52,7 @@ class Webring extends HTMLElement {
                 const content = `
                 <a href="${sites[previousSiteIndex].url}" rel="prev noreferrer external">&lt; avant</a>
                 /  
-               <a rel="external noreferrer" href="">${matchedSiteIndex}</a>
+               <a rel="external noreferrer" href="">${sites[matchedSiteIndex].name}</a>
                  / 
                <a href="${sites[nextSiteIndex].url}" rel="next noreferrer external">après &gt;</a>
                 `;
