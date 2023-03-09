@@ -31,14 +31,14 @@ class Webring extends HTMLElement {
 
         this.shadowRoot.appendChild(template.content.cloneNode(true));
 
-        const currentSite = this.getAttribute("current-site");
+        const currentSite = document.getElementsByTagName("title")[0].innerHTML
 
         fetch(JSON_WEBRING)
             .then((response) => response.json())
             .then((sites) => {
                 // Va chercher le site actuel dans le json
                 const matchedSiteIndex = sites.findIndex(
-                    (site) => site.name === currentSite
+                    (site) => site.name == currentSite
                 );
                 console.log(sites);
 
@@ -52,7 +52,7 @@ class Webring extends HTMLElement {
                 const content = `
                 <a href="${sites[previousSiteIndex].url}" rel="prev noreferrer external">&lt; avant</a>
                 /  
-               <a rel="external noreferrer" href="">current</a>
+               <a rel="external noreferrer" href="">${matchedSiteIndex}</a>
                  / 
                <a href="${sites[nextSiteIndex].url}" rel="next noreferrer external">après &gt;</a>
                 `;
