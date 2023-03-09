@@ -33,6 +33,7 @@ class Webring extends HTMLElement {
 
         const currentSite = this.getAttribute("site");
         // ou sinon on peut aller chercher le paramètre site dans la déclaration du widget
+        console.log(currentSite)
 
         fetch(JSON_WEBRING)
             .then((response) => response.json())
@@ -53,7 +54,7 @@ class Webring extends HTMLElement {
                 const content = `
                 <a href="${sites[previousSiteIndex].url}" rel="prev noreferrer external">&lt; avant</a>
                 /  
-               <a rel="external noreferrer" href="${sites[matchedSiteIndex].url}">${sites[matchedSiteIndex].name}</a>
+               <a rel="external noreferrer" href="current">current</a>
                  / 
                <a href="${sites[nextSiteIndex].url}" rel="next noreferrer external">après &gt;</a>
                 `;
