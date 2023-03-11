@@ -27,35 +27,33 @@ template.innerHTML = `
 
 class Webring extends HTMLElement {
     connectedCallback() {
+
         this.attachShadow({ mode: "open" });
 
         this.shadowRoot.appendChild(template.content.cloneNode(true));
 
         const currentSite = this.getAttribute("site");
         // ou sinon on peut aller chercher le paramètre site dans la déclaration du widget
-        console.log(currentSite)
 
         fetch(JSON_WEBRING)
             .then((response) => response.json())
             .then((sites) => {
-                // Va chercher le site actuel dans le json
+                // Va chercher les infos du site actuel dans le json
                 const matchedSiteIndex = sites.findIndex(
                     (site) => site.url === currentSite
                 )
-                console.log(matchedSiteIndex)
-                const matchedSite = sites[matchedSiteIndex];
-                console.log(matchedSite)
 
-                // Va chercher le site précédent dans le json
+                // stocke les index des sites avant et après dans le json
                 let previousSiteIndex = matchedSiteIndex - 1;
                 if(previousSiteIndex < 0)previousSiteIndex = sites.length - 1;
                 
                 let nextSiteIndex = matchedSiteIndex + 1;
                 if(nextSiteIndex >= sites.length)nextSiteIndex = 0;
 
+                
                 const content = `
                 <a href="${sites[previousSiteIndex].url}" rel="prev noreferrer external">&lt; avant</a>
-                /  
+                /   
                <a rel="external noreferrer" href="${sites[matchedSiteIndex].url}">${sites[matchedSiteIndex].name}</a>
                  / 
                <a href="${sites[nextSiteIndex].url}" rel="next noreferrer external">après &gt;</a>
