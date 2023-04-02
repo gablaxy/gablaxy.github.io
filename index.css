@@ -19,12 +19,15 @@ html{
 
 a {
     color: var(--texte);
-    
 }
 
 a:hover{
     cursor : url("./img/leaf.cur"), auto;
     color : var(--hover);
+}
+
+a:visited{
+    color: var(--texte);
 }
 
 header{
