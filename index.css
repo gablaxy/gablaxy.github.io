@@ -3,7 +3,7 @@
     --boxes : #0000002a;
 
     --titres : #1b6444;
-    --hover : #3d966f;
+    --hover : #000000;
     --texte : #1b6444;
     --separations : #1b6444;
     cursor : url("./img/leaf.cur"), auto;
@@ -17,8 +17,14 @@ html{
     cursor : url("./img/leaf.cur"), auto;
 }
 
+a {
+    color: var(--texte);
+    
+}
+
 a:hover{
     cursor : url("./img/leaf.cur"), auto;
+    color : var(--hover);
 }
 
 header{
