@@ -35,6 +35,16 @@ footer{
     box-sizing: border-box;
 }
 
+a {
+    color: var(--titres);
+    cursor: pointer;
+    text-decoration: none;
+}
+
+a:hover{
+    color: var(--hover);
+}
+
 
 #canvas{
     box-sizing: border-box;
@@ -91,15 +101,7 @@ nav > a {
     padding-left: 20px;
     padding-right: 20px;
     font-size: 18px;
-    color: var(--titres);
-    cursor: pointer;
-    text-decoration: none;
 }
-
-nav > a:hover {
-    color: var(--hover);
-}
-
 
 span{
     color: var(--titres);
@@ -112,23 +114,7 @@ span{
     color: var(--titres);
 }
 
-ul {
-    color:var(--titres);
-    list-style: none;
-    font-size: 16px;
-    text-transform: capitalize;
-}
 
-ul a{
-    text-decoration: none;
-    color: var(--texte);
-    font-weight: 800;
-    font-size: 1.2em;
-}
-
-ul a:hover{
-    color:var(--hover);
-}
 
 
 
