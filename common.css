@@ -18,6 +18,10 @@ h3{
 
 }
 
+span{
+    color: var(--titres);
+}
+
 
 header{
     border-bottom: 1px solid var(--separations);
