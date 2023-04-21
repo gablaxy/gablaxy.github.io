@@ -15,26 +15,6 @@ html{
     font-family: 'Poppins', 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
 }
 
-header{
-    border-bottom: 1px solid var(--separations);
-}
-
-footer{
-    border-top: 1px solid var(--separations);
-    bottom: 0;
-}
-
-footer{
-    text-align: center;
-    padding: 10px;
-    color: var(--texte);
-}
-
-.badges img{
-    height: 31px;
-    box-sizing: border-box;
-}
-
 a {
     color: var(--titres);
     cursor: pointer;
