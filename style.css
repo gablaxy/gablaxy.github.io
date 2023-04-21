@@ -54,34 +54,7 @@ h3 img{
     margin-right: 10px;
 }
 
-hr{
-    width: 100%; 
-    height: 1px; 
-    background-color: var(--separations); 
-    border: none;
-}
-
-summary{
-    font-size: 20px;
-    color: var(--titres);
-    cursor: pointer;
-}
-
-
-
-/* Navbars */
-
-nav {
-    text-align: center;
-    padding-bottom: 15px;
-    padding-top: 7px;
-}
-
-nav > a {
-    padding-left: 20px;
-    padding-right: 20px;
-    font-size: 18px;
-}
+/** Navbars **/
 
 span{
     color: var(--titres);
