@@ -25,29 +25,6 @@ a:hover{
     color: var(--hover);
 }
 
-
-#canvas{
-    box-sizing: border-box;
-    width: 1200px;
-    background-color: var(--boxes);
-    margin: 50px auto;
-    padding: 40px;
-    border-radius: 10px;
-}
-
-#heading{
-    text-align: center;
-}
-
-h3{
-    font-size: 25px;
-    padding: 10px;
-    padding-top: 0;
-    padding-bottom: 0;
-    color: var(--titres);
-
-}
-
 h3 img{
     width: 50px;
     height: 50px;
