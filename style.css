@@ -32,11 +32,6 @@ h3 img{
 }
 
 /** Navbars **/
-
-span{
-    color: var(--titres);
-}
-
 .date{
     margin-top: 0;
     text-align: center;
