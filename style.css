@@ -13,6 +13,7 @@ html{
     background-color: var(--background);
     color: var(--texte);
     font-family: 'Poppins', 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+    align-items:center;
 }
 
 a {
