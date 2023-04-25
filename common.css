@@ -1,4 +1,6 @@
 #canvas{
+    box-sizing: border-box;
+    width: 700px;
     background-color: var(--boxes);
     margin: 50px auto;
     padding: 40px;
