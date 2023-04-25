@@ -30,11 +30,6 @@ a:visited{
     color: var(--texte);
 }
 
-#canvas{
-    box-sizing: border-box;
-    width: 700px;
-}
-
 .project-box{
     text-align: center;
     background-color: var(--boxes);
