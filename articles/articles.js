@@ -1,10 +1,7 @@
-let list_li = ["test","yuy"];
+let list_li = ["test"];
 let articles = document.getElementById("liste_arti");
 for(let i = 0; i < list_li.length; i++){
-                            let content = document.createElement("li");
-                            content.innerHTML = `<a href="./${list_li[i]}.html">${list_li[i]}</a>`
-                            console.log(i);
-                            console.log(list_li[i]);
-                            console.log(content);
-                            articles.appendChild(content);
+	let content = document.createElement("li");
+	content.innerHTML = `<a href="./${list_li[i]}.html">${list_li[i]}</a>`
+	articles.appendChild(content);
 }
