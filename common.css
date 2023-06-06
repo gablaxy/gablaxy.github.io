@@ -77,8 +77,8 @@ nav > a {
 /* Links */
 
 .color-link {
-    filter: grayscale(1) brightness(125%);
     -webkit-filter: grayscale(1) brightness(125%);
+    filter: grayscale(1) brightness(125%);
     transition-duration: 0.6s;
 }
 
@@ -88,8 +88,8 @@ nav > a {
 }
 
 .inactive-link {
-    filter: grayscale(1) brightness(35%);
     -webkit-filter: grayscale(1) brightness(35%);
+    filter: grayscale(1) brightness(35%);
 }
 
 .glow-link {
@@ -97,8 +97,8 @@ nav > a {
 }
 
 .glow-link:hover {
-    filter: drop-shadow(0 0 2px #fff);
     -webkit-filter: drop-shadow(0 0 2px #fff);
+    filter: drop-shadow(0 0 2px #fff);
 }
 
 /* Input things */
