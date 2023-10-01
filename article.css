@@ -2,8 +2,11 @@ html {
   color-scheme: dark;
 }
 
+h3{
+  font-size: FreePixel;
+}
+
 p{
-   font-family: 'Poppins', 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
    line-height:1,4;
    font-size: 14px;
    font-style: normal;
