@@ -1,3 +1,12 @@
+@font-face {
+    font-family: Title;
+    src: url(./fonts/wayfarers-toy-box.ttf);
+}
+
+h3{
+    font-family: Title;
+}
+
 html {
   color-scheme: dark;
 }
