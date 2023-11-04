@@ -1,15 +1,19 @@
 @font-face {
     font-family: FreePixel;
-    src: url(./fonts/FreePixel.ttf);
+    src: url(../fonts/FreePixel.ttf);
 }
 
  @font-face {
     font-family: Title;
-    src: url(./fonts/wayfarers-toy-box.ttf);
+    src: url(../fonts/wayfarers-toy-box.ttf);
 }
 
 title{
     font-family: Title;
+}
+
+p{
+    margin-top: 0;
 }
 
 #canvas{
@@ -32,7 +36,11 @@ h3{
     padding-top: 0;
     padding-bottom: 0;
     color: var(--titres);
+}
 
+h4{
+    padding: 10px;
+    color: var(--séparations);
 }
 
 span{

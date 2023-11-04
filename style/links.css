@@ -6,7 +6,7 @@
     --hover : #000000;
     --texte : #1b6444;
     --separations : #1b6444;
-    cursor : url("./img/leaf.cur"), auto;
+    cursor : url("../img/leaf.cur"), auto;
 }
 
 
@@ -14,7 +14,7 @@ html{
     background-color: var(--background);
     color: var(--texte);
     font-family: 'Poppins', 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
-    cursor : url("./img/leaf.cur"), auto;
+    cursor : url("../img/leaf.cur"), auto;
 }
 
 a {
@@ -22,7 +22,7 @@ a {
 }
 
 a:hover{
-    cursor : url("./img/leaf.cur"), auto;
+    cursor : url("../img/leaf.cur"), auto;
     color : var(--hover);
 }
 
