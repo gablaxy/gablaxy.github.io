@@ -25,16 +25,14 @@ html{
 }
 
 body{
-  font-size: 1.3750em;
+    font-size: 1.3750em;
 }
 
 header{
     background-color: var(--background);
     border-radius: 10px;
-    margin: 2% 2% 2%;
-    margin-left: 2%;
-	margin-right: 2%;
-	padding: 0.65em;
+    margin: 2%;
+    padding: 0.65em;
 }
 
 p{
@@ -192,15 +190,15 @@ nav > a:hover {
     animation-delay:2s
   }
 .treeList li:nth-child(7) {
-    animation:animateBranches7 20s linear infinite;
+    animation:animateBranches5 20s linear infinite;
     animation-delay:2s
 }
 .treeList li:nth-child(8) {
-    animation:animateBranches8 20s linear infinite;
+    animation:animateBranches6 20s linear infinite;
     animation-delay:2s
 }
 .treeList li:nth-child(9) {
-    animation:animateBranches9 20s linear infinite;
+    animation:animateBranches5 20s linear infinite;
     animation-delay:2s
 }
 
@@ -301,57 +299,6 @@ nav > a:hover {
     }
     75% {
       transform:translateX(3px)
-    }
-    100% {
-      transform:translateX(0)
-    }
-}
-@keyframes animateBranches7 {
-    0% {
-      transform:translateX(0)
-    }
-    25% {
-      transform:translateX(-5px)
-    }
-    50% {
-      transform:translateX(0)
-    }
-    75% {
-      transform:translateX(5px)
-    }
-    100% {
-      transform:translateX(0)
-    }
-}
-@keyframes animateBranches8 {
-    0% {
-      transform:translateX(0)
-    }
-    25% {
-      transform:translateX(-3px)
-    }
-    50% {
-      transform:translateX(0)
-    }
-    75% {
-      transform:translateX(3px)
-    }
-    100% {
-      transform:translateX(0)
-    }
-}
-@keyframes animateBranches9 {
-    0% {
-      transform:translateX(0)
-    }
-    25% {
-      transform:translateX(-5px)
-    }
-    50% {
-      transform:translateX(0)
-    }
-    75% {
-      transform:translateX(5px)
     }
     100% {
       transform:translateX(0)
