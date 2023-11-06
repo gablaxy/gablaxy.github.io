@@ -4,7 +4,7 @@
 }
 
 :root{
-    --background : #1b6444a5;
+    --background : #1b6444dc;
     --boxes : #0000002a;
 
     --titres : #a5d8c2;
@@ -91,7 +91,7 @@ a:visited{
 }
 
 #canvas{
-  background-color: var(--separations);
+  background-color: var(--background);
   border-radius: 10px;
   margin: 2% 2% 3%;
   margin-left: 2%;
@@ -156,7 +156,7 @@ nav > a:hover {
     display: grid;
     grid-template-columns: repeat(3);
     justify-items: center;
-    align-items: center;
+    align-items:center;
 }
 
 .treeList {
