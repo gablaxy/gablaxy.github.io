@@ -153,7 +153,10 @@ nav > a:hover {
 
 /* Tree animation */
 #tree{
-    margin: auto;
+    display: grid;
+    grid-template-columns: repeat(3);
+    justify-items: center;
+    align-items: center;
 }
 
 .treeList {
