@@ -150,16 +150,23 @@ nav > a:hover {
     color: var(--hover);
 }
 
+.champi{
+  text-align: center;
+}
 
 /* Tree animation */
 #tree{
     display: grid;
-    grid-template-columns: repeat(3);
-    justify-items: center;
-    align-items:center;
+    grid-auto-flow: column;
+}
+
+.box{
+    align-self: end;
+    justify-self: center;
 }
 
 .treeList {
+    padding-left: 0;
     list-style-type:none;
     resize:none;
     white-space: pre;
