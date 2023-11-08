@@ -5,6 +5,18 @@
     </head>
 
     <body>
+
+          // assign a random height, pattern and colour to each book
+spines.map(function (s, i) {
+  let randomHeight = getRandomInt(220, 290);
+  s.style.height = `${randomHeight}px`;
+  s.style.top = `${280 - randomHeight}px`;
+
+  covers[i].style.height = `${randomHeight}px`;
+  covers[i].style.top = `${280 - randomHeight}px`;
+
+  tops[i].style.top = `${280 - randomHeight}px`;
+});
         <div class="bookshelf">
             <div class="book">
                 <div class="side spine">
@@ -35,8 +47,8 @@
                     <span class="spine-title"> Book Title </span>
                     <span class="spine-author"> PG </span>
                 </div>
-                <div class="side top"></div>
-                <div class="side cover"></div>
+                <div class="side top" style="top:60px;"></div>
+                <div class="side cover" style="height:220px; top:60px;"></div>
             </div>
             <div class="book">
                 <div class="side spine">
