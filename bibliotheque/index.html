@@ -1,51 +1,109 @@
 <!DOCTYPE html>
 <html lang="en">
-      <head>
+    <head>
+        <title>Bookshelf</title>
         <link rel="stylesheet" href="bib.css" />
+        <link rel="stylesheet" href="style.css" />
     </head>
 
     <body>
-        <div class="bookshelf">
-            <div class="book">
-                <div class="side spine" style="background-color:green; background-image:var(--spine-stairs)">
-                    <span class="spine-title"> Book Title </span>
-                    <span class="spine-author"> PG </span>
+            <div id="content">
+                <div id="bookshelves">
+                    <h1>Bookshelf</h1>
+                    <ul>
+                        <li class="shelf">
+                            <h2>2023</h2>
+                            <div class="bookshelf">
+                                <div class="book">
+                                    <div class="side spine" style="background-color:green; background-image:var(--spine-stairs)">
+                                        <span class="spine-title"> Book Title </span>
+                                        <span class="spine-author"> PG </span>
+                                    </div>
+                                    <div class="side top"></div>
+                                    <div class="side cover"></div>
+                                </div>
+                                <div class="book">
+                                    <div class="side spine" style="background-image:var(--spine-tartan); background-color:red;">
+                                        <span class="spine-title"> Book Title </span>
+                                        <span class="spine-author"> PG </span>
+                                    </div>
+                                    <div class="side top"></div>
+                                    <div class="side cover"></div>
+                                </div>
+                                <div class="book">
+                                    <div class="side spine" style="background-image:var(--spine-argyle); background-color:blue;">
+                                        <span class="spine-title"> Book Title </span>
+                                        <span class="spine-author"> PG </span>
+                                    </div>
+                                    <div class="side top"></div>
+                                    <div class="side cover"></div>
+                                </div>
+                                <div class="book">
+                                    <div class="side spine" style="background-image:var(--spine-pyramid); background-color:darkgreen;">
+                                        <span class="spine-title"> Book Title </span>
+                                        <span class="spine-author"> PG </span>
+                                    </div>
+                                    <div class="side top"></div>
+                                    <div class="side cover"></div>
+                                </div>
+                                <div class="book">
+                                    <div class="side spine" style="background-image:var(--spine-tartan); background-color:darkolivegreen;">
+                                        <span class="spine-title"> Book Title </span>
+                                        <span class="spine-author"> PG </span>
+                                    </div>
+                                    <div class="side top"></div>
+                                    <div class="side cover"></div>
+                                </div>
+                            </div>
+                        </li>
+                        <li class="shelf">
+                            <h2>Before 2023</h2>
+                            <div class="bookshelf">
+                                <div class="book">
+                                    <div class="side spine" style="background-color:green; background-image:var(--spine-stairs)">
+                                        <span class="spine-title"> Book Title </span>
+                                        <span class="spine-author"> PG </span>
+                                    </div>
+                                    <div class="side top"></div>
+                                    <div class="side cover"></div>
+                                </div>
+                                <div class="book">
+                                    <div class="side spine" style="background-image:var(--spine-tartan); background-color:red;">
+                                        <span class="spine-title"> Book Title </span>
+                                        <span class="spine-author"> PG </span>
+                                    </div>
+                                    <div class="side top"></div>
+                                    <div class="side cover"></div>
+                                </div>
+                                <div class="book">
+                                    <div class="side spine" style="background-image:var(--spine-argyle); background-color:blue;">
+                                        <span class="spine-title"> Book Title </span>
+                                        <span class="spine-author"> PG </span>
+                                    </div>
+                                    <div class="side top"></div>
+                                    <div class="side cover"></div>
+                                </div>
+                                <div class="book">
+                                    <div class="side spine" style="background-image:var(--spine-pyramid); background-color:darkgreen;">
+                                        <span class="spine-title"> Book Title </span>
+                                        <span class="spine-author"> PG </span>
+                                    </div>
+                                    <div class="side top"></div>
+                                    <div class="side cover"></div>
+                                </div>
+                                <div class="book">
+                                    <div class="side spine" style="background-image:var(--spine-tartan); background-color:darkolivegreen;">
+                                        <span class="spine-title"> Book Title </span>
+                                        <span class="spine-author"> PG </span>
+                                    </div>
+                                    <div class="side top"></div>
+                                    <div class="side cover"></div>
+                                </div>
+                            </div>
+                        </li>
+                    </ul>
                 </div>
-                <div class="side top"></div>
-                <div class="side cover"></div>
             </div>
-            <div class="book">
-                <div class="side spine" style="background-image:var(--spine-tartan); background-color:red;">
-                    <span class="spine-title"> Book Title </span>
-                    <span class="spine-author"> PG </span>
-                </div>
-                <div class="side top"></div>
-                <div class="side cover"></div>
-            </div>
-            <div class="book">
-                <div class="side spine" style="background-image:var(--spine-argyle); background-color:blue;">
-                    <span class="spine-title"> Book Title </span>
-                    <span class="spine-author"> PG </span>
-                </div>
-                <div class="side top"></div>
-                <div class="side cover"></div>
-            </div>
-            <div class="book">
-                <div class="side spine" style="background-image:var(--spine-pyramid); background-color:darkgreen;">
-                    <span class="spine-title"> Book Title </span>
-                    <span class="spine-author"> PG </span>
-                </div>
-                <div class="side top"></div>
-                <div class="side cover"></div>
-            </div>
-            <div class="book">
-                <div class="side spine" style="background-image:var(--spine-tartan); background-color:darkolivegreen;">
-                    <span class="spine-title"> Book Title </span>
-                    <span class="spine-author"> PG </span>
-                </div>
-                <div class="side top"></div>
-                <div class="side cover"></div>
-            </div>
-        </div>
+            <div class="screen"></div>
       </body>
 </html>
