@@ -5,36 +5,36 @@ template.innerHTML = `
 <style>
 #webring-container{
     margin-top: 10px;
-    border: 1px solid #9162c7;
+    border: 1px solid var(--titres);
     border-radius: 5px;
     padding: 5px;
     display: inline-flex;
-    background-color: #222326;
+    background-color: var(--background);
 }
 
 #webring-title{
     font-family: Title;
-    color: #c296f5;
+    color: var(--titres);
     margin-top: 0;
     margin-bottom: 3px;
     padding: 0 5px;
-    font-size: 1.2em;
+    font-size: 0.8em;
     text-align: center;
 }
 
 #webring-inner a{
-    color: #9162c7;
+    color: var(--titres);
     text-decoration: none;
     padding: 0 5px;
 }
 
 #webring-inner a:hover{
-    color: #c296f5;
+    color: var(--titres);
 }
 
 #webring-inner{
     font-family: FreePixel;
-    color: #c296f5;
+    color: var(--titres);
     padding: 0 5px;
 }
 </style>
