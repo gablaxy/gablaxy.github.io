@@ -29,7 +29,7 @@ template.innerHTML = `
 }
 
 #webring-inner a:hover{
-    color: var(--titres);
+    color: var(--hover);
 }
 
 #webring-inner{
