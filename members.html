@@ -38,7 +38,10 @@
 
                 for (index = 0; index < sites.length; index++) {
                     if(sites[index].img_link == ""){
-                        const fx = fetch("https://randomfox.ca/floof/");
+                        const response = fetch("https://randomfox.ca/floof/");
+                        const fx = response.json();
+                        console.log(response);
+                        console.log(fx)
                         content += `<a href="${sites[index].url}"><img src="${fx.image}"></img></a>`
                     }else{   
                         content += `<a href="${sites[index].url}"><img src="${sites[index].img_link}"></img></a>`
