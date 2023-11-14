@@ -31,12 +31,6 @@
         <script src="./webring.js"></script>
     </footer>
     <script type="text/javascript">
-        async function getFox() {
-              const reponse = await fetch("https://randomfox.ca/floof/");
-              const fx = await reponse.json();
-              return fx.image;
-        }
-
         fetch(JSON_WEBRING)
             .then((response) => response.json())
             .then((sites) => {
@@ -44,13 +38,10 @@
 
                 for (let index = 0; index < sites.length; index++) {
                     if(sites[index].img_link == ""){
-                        foxe = async () => {await getFox()}
-                        console.log(foxe)
-                        console.log("one site content: " + content)
+                        content += `<a href="${sites[index].url}"></a>`;
                     }else{   
                         content += `<a href="${sites[index].url}"><img src="${sites[index].img_link}"></img></a>`;
                     }
-                    console.log("end content: " + content)
                 }
                 
                 document.querySelector("#members").innerHTML = content;
