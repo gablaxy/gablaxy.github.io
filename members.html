@@ -40,7 +40,7 @@
                 `;
 
                 for (index = 0; index < sites.length; index++) {
-                    content += `<a href="${sites[index].url}"><img src="http://placekitten.com/88/31"></img>${sites[index].name}</a>`
+                    content += `<a href="${sites[index].url}"><img src="${sites[index].img_link}"></img></a>`
                 }
                 
                 document.querySelector("#members").innerHTML = content;
