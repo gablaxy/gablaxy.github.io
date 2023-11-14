@@ -37,9 +37,6 @@
               return fx.image;
         }
 
-
-
-        
         fetch(JSON_WEBRING)
             .then((response) => response.json())
             .then((sites) => {
@@ -51,10 +48,13 @@
                         foxe.then(value => {
                             console.log(value);
                             content += `<a href="${sites[index].url}"><img src="${value}"></img></a>`;
+                            console.log(content)
                         })
+                        console.log(content)
                     }else{   
                         content += `<a href="${sites[index].url}"><img src="${sites[index].img_link}"></img></a>`;
                     }
+                    console.log(content)
                 }
                 
                 document.querySelector("#members").innerHTML = content;
