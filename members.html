@@ -37,8 +37,12 @@
                 console.log(sites[0])
                 console.log(sites[1]) 
                 const content = `
-                <img src="http://placekitten.com/88/31"></img>
                 `;
+
+                sites.foreach((site) => {
+                    content += `<a href="${site.url}"><img src="http://placekitten.com/88/31"></img>${site.name}</a>`
+                })
+                
                 document.querySelector("#members").innerHTML = content;
             })
             .catch((error) => {
