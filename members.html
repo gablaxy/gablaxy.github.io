@@ -48,8 +48,8 @@
                 for (index = 0; index < sites.length; index++) {
                     if(sites[index].img_link == ""){
                         foxe = getFox();
-                        console.log(foxe);
-                        content += `<a href="${sites[index].url}"><img src="${foxe}"></img></a>`;
+                        console.log(foxe.value);
+                        content += `<a href="${sites[index].url}"><img src="${foxe.value}"></img></a>`;
                     }else{   
                         content += `<a href="${sites[index].url}"><img src="${sites[index].img_link}"></img></a>`;
                     }
