@@ -63,6 +63,9 @@ class Webring extends HTMLElement {
                     (site) => site.url === currentSite
                 )
                 console.log(currentSite);
+                console.log(sites[0].url);
+                console.log(sites[1].url);
+                console.log(sites[2].url);
 
                 // stocke les index des sites avant et après dans le json
                 let previousSiteIndex = matchedSiteIndex - 1;
