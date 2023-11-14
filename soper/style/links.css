@@ -1,0 +1,96 @@
+:root{
+    --background : #a5d8c2;
+    --boxes : #0000002a;
+
+    --titres : #1b6444;
+    --hover : #000000;
+    --texte : #1b6444;
+    --separations : #1b6444;
+    cursor : url("../img/leaf.cur"), auto;
+}
+
+
+html{
+    background-color: var(--background);
+    color: var(--texte);
+    font-family: 'Poppins', 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+    cursor : url("../img/leaf.cur"), auto;
+}
+
+a {
+    color: var(--texte);
+}
+
+a:hover{
+    cursor : url("../img/leaf.cur"), auto;
+    color : var(--hover);
+}
+
+a:visited{
+    color: var(--texte);
+}
+
+.project-box{
+    text-align: center;
+    background-color: var(--boxes);
+    margin: 10px;
+    padding: 10px;
+    border-radius: 10px;
+}
+
+.project-box > h3{
+    color: var(--titres);
+    margin-top: 0;
+    margin-bottom: 0;
+}
+
+.project-box > p{
+    padding: 10px;
+    margin-top: 0;
+    margin-bottom: 0;
+    text-align: left;
+}
+
+.project-box > img {
+    float: right;
+    width: 64px;
+    margin-right: 10px;
+    margin-top: 10px;
+    border-radius: 3px;
+}
+
+/** Navbars **/
+
+nav > a {
+    color: revert;
+    cursor: pointer;
+}
+
+nav > a:hover {
+    color: var(--hover);
+}
+
+.date{
+    margin-top: 0;
+    text-align: center;
+    font-size: 20px;
+    color: var(--titres);
+}
+
+ul {
+    color:var(--titres);
+    list-style: none;
+    font-size: 16px;
+    text-transform: capitalize;
+}
+
+ul a{
+    text-decoration: none;
+    color: var(--texte);
+    font-weight: 800;
+    font-size: 1.2em;
+}
+
+ul a:hover{
+    color:var(--hover);
+}

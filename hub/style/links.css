@@ -1,6 +1,6 @@
 @font-face {
   font-family: Title;
-  src: url(../fonts/wayfarers-toy-box.ttf);
+  src: url(/hub/fonts/wayfarers-toy-box.ttf);
 }
 
 :root{
@@ -11,7 +11,7 @@
     --hover : #000000;
     --texte : #a5d8c2;
     --separations : #1b6444a5;
-    cursor : url("/img/leaf.cur"), auto;
+    cursor : url("/hub/img/leaf.cur"), auto;
 }
 
 html{
@@ -21,7 +21,7 @@ html{
     background-attachment: fixed;
     color: var(--texte);
     font-family: "Aldrich", monospace;
-    cursor : url("/img/leaf.cur"), auto;
+    cursor : url("/hub/img/leaf.cur"), auto;
 }
 
 body{
@@ -76,7 +76,7 @@ a {
 }
 
 a:hover{
-    cursor : url("/img/leaf.cur"), auto;
+    cursor : url("/hub/img/leaf.cur"), auto;
     color : var(--hover);
 }
 

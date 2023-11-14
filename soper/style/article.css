@@ -1,0 +1,36 @@
+@font-face {
+    font-family: Title;
+    src: url(../fonts/wayfarers-toy-box.ttf);
+}
+
+html {
+  color-scheme: dark;
+}
+
+p{
+   line-height:1,4;
+   font-size: 14px;
+   font-style: normal;
+   text-justify: auto;
+}
+
+pre code {
+  white-space: pre-wrap;
+}
+
+img {
+  max-width: 100%;
+}
+
+#main>h3 {
+  margin-top: 0;
+}
+
+/* Responsive */
+
+@media screen and (max-width: 700px) {
+   p{
+     font-size:13px
+  }
+}
+
