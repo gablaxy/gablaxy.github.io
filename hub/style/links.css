@@ -159,11 +159,11 @@ nav > a:hover {
     border-top: 1px solid var(--separations);
     bottom: 0;
     text-align: center;
-    padding: 10px;
+    margin: 10px;
     color: var(--texte);
 }
 
-#members > img{
+#member_img{
     height: 31px;
     width: 88px;
     box-sizing: border-box;
