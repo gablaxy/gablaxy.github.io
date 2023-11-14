@@ -54,7 +54,6 @@ class Webring extends HTMLElement {
         this.shadowRoot.appendChild(template.content.cloneNode(true));
 
         const currentSite = this.getAttribute("site");
-        // ou sinon on peut aller chercher le paramètre site dans la déclaration du widget
 
         fetch(JSON_WEBRING)
             .then((response) => response.json())
