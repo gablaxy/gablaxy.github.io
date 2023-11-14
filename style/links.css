@@ -154,6 +154,23 @@ nav > a:hover {
   text-align: center;
 }
 
+/* Members badges */
+#members{
+    border-top: 1px solid var(--separations);
+    bottom: 0;
+    text-align: center;
+    padding: 10px;
+    color: var(--texte);
+}
+
+#members > img{
+    height: 31px;
+    width: 88px;
+    box-sizing: border-box;
+}
+
+
+
 /* Tree animation */
 #tree{
     display: grid;
