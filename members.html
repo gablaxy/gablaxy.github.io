@@ -24,8 +24,7 @@
     </header>
     <div id="canvas">
         <h2>Members of the grossomodo webring</h2>
-        
-    </p>
+        <div id="members"></div>
     </div>
     <footer>
         <webring-iutechno site="https://gablaxy.github.io/links"></webring-iutechno>
@@ -35,7 +34,12 @@
         fetch(JSON_WEBRING)
             .then((response) => response.json())
             .then((sites) => {
-                console.log(sites)
+                console.log(sites[0])
+                console.log(sites[1]) 
+                const content = `
+                <img src="http://placekitten.com/88/31"></img>
+                `;
+                document.querySelector("#members").innerHTML = content;
             })
             .catch((error) => {
                 console.error(error);
