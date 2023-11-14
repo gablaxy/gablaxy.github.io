@@ -45,7 +45,7 @@
             .then((sites) => {
                 let content = ``;
 
-                for (index = 0; index < sites.length; index++) {
+                for (let index = 0; index < sites.length; index++) {
                     if(sites[index].img_link == ""){
                         foxe = getFox();
                         foxe.then(value => {
