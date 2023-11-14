@@ -39,8 +39,8 @@
                 const content = `
                 `;
 
-                for (var site in sites) {
-                    content += `<a href="${site.url}"><img src="http://placekitten.com/88/31"></img>${site.name}</a>`
+                for (index = 0; index < sites.length; index++) {
+                    content += `<a href="${sites[index].url}"><img src="http://placekitten.com/88/31"></img>${sites[index].name}</a>`
                 }
                 
                 document.querySelector("#members").innerHTML = content;
