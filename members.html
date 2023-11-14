@@ -39,9 +39,9 @@
                 const content = `
                 `;
 
-                sites.foreach((site) => {
+                for (var site in sites) {
                     content += `<a href="${site.url}"><img src="http://placekitten.com/88/31"></img>${site.name}</a>`
-                })
+                }
                 
                 document.querySelector("#members").innerHTML = content;
             })
