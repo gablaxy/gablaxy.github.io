@@ -34,7 +34,7 @@
         async function getFox() {
               const reponse = await fetch("https://randomfox.ca/floof/");
               const fx = await reponse.json();
-              return fx.image;
+              return fx;
         }
 
 
