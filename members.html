@@ -34,13 +34,15 @@
         fetch(JSON_WEBRING)
             .then((response) => response.json())
             .then((sites) => {
-                console.log(sites[0])
-                console.log(sites[1]) 
-                let content = `
-                `;
+                let content = ``;
 
                 for (index = 0; index < sites.length; index++) {
-                    content += `<a href="${sites[index].url}"><img src="${sites[index].img_link}"></img></a>`
+                    if(sites[index].img_link == ""){
+                        const fx = await fetch("https://randomfox.ca/floof/");
+                        content += `<a href="${sites[index].url}"><img src="${fx.image}"></img></a>`
+                    }else{   
+                        content += `<a href="${sites[index].url}"><img src="${sites[index].img_link}"></img></a>`
+                    }
                 }
                 
                 document.querySelector("#members").innerHTML = content;
