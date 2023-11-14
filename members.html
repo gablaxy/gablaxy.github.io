@@ -46,15 +46,15 @@
                     if(sites[index].img_link == ""){
                         foxe = getFox();
                         foxe.then(value => {
-                            console.log(value);
+                            console.log("value: " + value);
                             content += `<a href="${sites[index].url}"><img src="${value}"></img></a>`;
-                            console.log(content)
+                            console.log("foxe value content: " +content)
                         })
-                        console.log(content)
+                        console.log("one site content: " + content)
                     }else{   
                         content += `<a href="${sites[index].url}"><img src="${sites[index].img_link}"></img></a>`;
                     }
-                    console.log(content)
+                    console.log("end content: " + content)
                 }
                 
                 document.querySelector("#members").innerHTML = content;
