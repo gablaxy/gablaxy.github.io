@@ -8,9 +8,9 @@ html {
 }
 
 p{
-   line-height:1,5;
    font-size: 18px;
    font-style: normal;
+   line-height: calc(1ex / 0.32);
    text-justify: auto;
    text-shadow:
         0.05em 0 white,
