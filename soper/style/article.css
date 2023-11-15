@@ -13,14 +13,14 @@ p{
    line-height: calc(1ex / 0.32);
    text-justify: auto;
    text-shadow:
-        0.05em 0 white,
-        0 0.05em white,
-        -0.05em 0 white,
-        0 -0.05em white,
-        -0.05em -0.05em white,
-        -0.05em 0.05em white,
-        0.05em -0.05em white,
-        0.05em 0.05em white;
+        0.05em 0 black,
+        0 0.05em black,
+        -0.05em 0 black,
+        0 -0.05em black,
+        -0.05em -0.05em black,
+        -0.05em 0.05em black,
+        0.05em -0.05em black,
+        0.05em 0.05em black;
 }
 
 pre code {
