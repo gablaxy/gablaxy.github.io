@@ -26,6 +26,14 @@ img {
   margin-top: 0;
 }
 
+li{
+    margin: 5px;
+}
+
+ul{
+    margin: 5px;
+}
+
 /* Responsive */
 
 @media screen and (max-width: 700px) {
