@@ -8,10 +8,19 @@ html {
 }
 
 p{
-   line-height:1,4;
-   font-size: 14px;
+   line-height:1,5;
+   font-size: 18px;
    font-style: normal;
    text-justify: auto;
+   text-shadow:
+        0.05em 0 white,
+        0 0.05em white,
+        -0.05em 0 white,
+        0 -0.05em white,
+        -0.05em -0.05em white,
+        -0.05em 0.05em white,
+        0.05em -0.05em white,
+        0.05em 0.05em white;
 }
 
 pre code {
