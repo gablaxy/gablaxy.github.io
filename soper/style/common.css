@@ -18,7 +18,7 @@ p{
 
 #canvas{
     box-sizing: border-box;
-    width: 700px;
+    width: 60%;
     background-color: var(--boxes);
     margin: 50px auto;
     padding: 40px;
