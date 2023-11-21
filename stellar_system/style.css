@@ -1,168 +1,261 @@
 :root{
-    background-color: #1f1f1f;
+    background-color:black;
 }
 
-.tooltip{
-    position: absolute;
-    top: -50px;
-    left: 50%;
-    transform: translateX(-50%);
-    background-color: #1f1f1f;
-    color: white;
-    padding: 10px;
-    border-radius: 5px;
-    opacity: 0;
+*, *:before, *:after {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+  }
+
+html, body{
+    width: 100%;
+    height: 100%;
+    overflow: hidden;
+}
+
+body{
+    background: radial-gradient(ellipse at center, #1C2837 0%, #050608 100%);
+    background-attachment: fixed;
+}
+
+/* Tooltip */
+.tooltip {
     visibility: hidden;
-    transition: all 0.3s ease;
+    width: 120px;
+    background-color: #555;
+    color: #fff;
+    text-align: center;
+    border-radius: 6px;
+    padding: 5px 0;
+  
+    /* Position the tooltip */
+    position: absolute;
+    z-index: 1;
+    top: 100%;
+    left: 50%;
+    margin-left: -60px;
 }
 
-#sun{
-    background-color: #f1c40f;
-    border-radius: 50%;
-    width: 50px;
-    height: 50px;
+.sun:hover .tooltip{
+    visibility: visible;
+}
+
+/* Starry background */
+.stars{
     position: absolute;
+    width: 100%;
+    height: 100%;
+    background-image: 
+        radial-gradient(2px 2px at 20px 30px, #eee, rgba(0,0,0,0)),
+        radial-gradient(2px 2px at 40px 70px, #fff, rgba(0,0,0,0)),
+        radial-gradient(2px 2px at 50px 160px, #ddd, rgba(0,0,0,0)),
+        radial-gradient(2px 2px at 90px 40px, #fff, rgba(0,0,0,0)),
+        radial-gradient(2px 2px at 130px 80px, #fff, rgba(0,0,0,0)),
+        radial-gradient(2px 2px at 160px 120px, #ddd, rgba(0,0,0,0));
+    background-size: 200px 200px;
+    background-repeat: repeat;
+    z-index: 0;
+}
+
+
+.all{
+    margin: 0 auto;
+    width: 100%;
+    height: 100%;
+    position: relative;
+}
+
+.all::after{
+    content: "";
+    position: absolute;
+    height: 2px;
+    width: 2px;
+    top: -2px;
+    background: white;
+}
+
+.all > div{
+    border-radius: 1000px;
     top: 50%;
     left: 50%;
-    transform: translate(-50%,-50%);
-    box-shadow: 0 0 20px 5px #f1c40f;
-    z-index: 9;
-}
-
-#sun:hover > .tooltip{
-    opacity: 1;
-    visibility: visible;
+    position: absolute;
+    z-index: 999;
 }
 
 .planete{
-    position: absolute;
-    border-radius: 50%;
     border: 1px solid silver;
-    left: 50%;
-    top: 50%;
-    transform: translate(-50%,-50%);
 }
 
 .planete::before{
-    content: '';
+    left: 50%;
+    border-radius: 100px;
+    content: "";
     position: absolute;
-    top: -20px;
-    left: -20px;
-    border-radius: 50%;
 }
 
-.planete:hover > .tooltip{
-    opacity: 1;
-    visibility: visible;
+.sun{
+    width: 40px;
+    height: 40px;
+    margin-top: -20px;
+    margin-left: -20px;
+
+    background: radial-gradient(ellipse at center, #ffd000 1%, #f9b700 39%, #f9b700 39%, #e06317 100%);
+    background-clip: padding-box;
+    border: 0 !important;
+    background-position: -28px -103px;
+    background-size: 175%;
+    box-shadow: 0 0 10px 2px rgba(255, 107, 0, 0.4), 0 0 22px 11px rgba(255, 203, 0, 0.13);
 }
 
-#mercury{
-    animation: rotation 10s infinite linear;
-    padding: 100px;
-    z-index: 8;
+.mercury{
+    height: 70px;
+    width: 70px;
+    margin-top: -35px;
+    margin-left: -35px;
+    -webkit-animation: rotation 14.3734687122s linear infinite;
+            animation: rotation 14.3734687122s linear infinite;
 }
 
-#mercury::before{
-    width: 10px;
-    height: 10px;
+.mercury::before{
+    height: 8px;
+    width: 8px;
     background-color: #e74c3c;
-    margin: 44px;
+    margin-top: -4px;
+    margin-left: -4px;
 }
 
-
-#venus{
-    animation: rotation 15s infinite linear;
-    padding: 150px;
-    z-index: 7;
+.venus{
+    height: 100px;
+    width: 100px;
+    margin-top: -50px;
+    margin-left: -50px;
+    -webkit-animation: rotation 36.657532s linear infinite;
+            animation: rotation 36.657532s linear infinite;
 }
 
-#venus::before{
-    width: 15px;
-    height: 15px;
-    background-color: #e67e22;
-    margin: 56px;
+.venus::before{
+    height: 16px;
+    width: 16px;
+    background-color: #BEB768;
+    margin-top: -8px;
+    margin-left: -8px;
 }
 
-#earth{
-    animation: rotation 20s infinite linear;
-    padding: 200px;
-    z-index: 6;
+.earth{
+    height: 145px;
+    width: 145px;
+    margin-top: -72.5px;
+    margin-left: -72.5px;
+    -webkit-animation: rotation 60s linear infinite;
+            animation: rotation 60s linear infinite;
 }
 
-#earth::before{
-    width: 18px;
-    height: 18px;
-    background-color: #3498db;
-    margin: 70px;
-}
-
-#mars{
-    animation: rotation 25s infinite linear;
-    padding: 250px;
-    z-index: 5;
-}
-
-#mars::before{
-    width: 12px;
+.earth::before{
     height: 12px;
-    background-color: #e74c3c;
-    margin: 87px;
+    width: 12px;
+    background: #11abe9;
+    margin-top: -6px;
+    margin-left: -6px;
 }
 
-#jupiter{
-    animation: rotation 30s infinite linear;
-    padding: 300px;
-    z-index: 4;
+.mars{
+    height: 190px;
+    width: 190px;
+    margin-top: -95px;
+    margin-left: -95px;
+    -webkit-animation: rotation 112.852262918s linear infinite;
+            animation: rotation 112.852262918s linear infinite;
 }
 
-#jupiter::before{
-    width: 24px;
+.mars::before{
+    height: 12px;
+    width: 12px;
+    background: #cf3921;
+    margin-top: -6px;
+    margin-left: -6px;
+}
+
+.jupiter{
+    height: 340px;
+    width: 340px;
+    margin-top: -170px;
+    margin-left: -170px;
+    -webkit-animation: rotation 711.445634203s linear infinite;
+            animation: rotation 711.445634203s linear infinite;
+}
+
+.jupiter::before{
+    height: 36px;
+    width: 36px;
+    background: #c76e2a;
+    margin-top: -18px;
+    margin-left: -18px;
+}
+
+.saturn{
+    height: 440px;
+    width: 440px;
+    margin-top: -220px;
+    margin-left: -220px;
+    -webkit-animation: rotation 1765.39049429s linear infinite;
+            animation: rotation 1765.39049429s linear infinite;
+}
+
+.saturn::before{
     height: 24px;
-    background-color: #e67e22;
-    margin: 96px;
+    width: 24px;
+    background: #e7c194;
+    margin-top: -12px;
+    margin-left: -12px;
 }
 
-#saturn{
-    animation: rotation 35s infinite linear;
-    padding: 350px;
-    z-index: 3;
+
+.uranus{
+    height: 520px;
+    width: 520px;
+    margin-top: -260px;
+    margin-left: -260px;
+    -webkit-animation: rotation 5024.80039359s linear infinite;
+            animation: rotation 5024.80039359s linear infinite;
 }
 
-#saturn::before{
-    width: 21px;
-    height: 21px;
-    background-color: #f1c40f;
-    margin: 112px;
-    box-shadow: 0 0 3px 3px #f1c40f;
+.uranus::before{
+    height: 20px;
+    width: 20px;
+    background: #b5e3e3;
+    margin-top: -10px;
+    margin-left: -10px;
 }
 
-#uranus{
-    animation: rotation 40s infinite linear;
-    padding: 400px;
-    z-index: 2;
+.neptune{
+    height: 635px;
+    width: 635px;
+    margin-top: -315px;
+    margin-left: -315px;
+    -webkit-animation: rotation 9823.56772491s linear infinite;
+            animation: rotation 9823.56772491s linear infinite;
 }
 
-#uranus::before{
-    width: 18px;
-    height: 18px;
-    background-color: #3498db;
-    margin: 128px;
+.neptune::before{
+    height: 20px;
+    width: 20px;
+    background: #175e9e;
+    margin-top: -10px;
+    margin-left: -10px;
 }
 
-#neptune{
-    animation: rotation 45s infinite linear;
-    padding: 450px;
-    z-index: 1;
-}
-
-#neptune::before{
-    width: 17px;
-    height: 17px;
-    background-color: #e67e22;
-    margin: 143px;
-}
   
 @keyframes rotation{
+    0%{
+        transform: rotate(0deg);
+    }
+    100%{
+        transform: rotate(360deg);
+    }
+}
+
+@-webkit-keyframes rotation{
     0%{
         transform: translate(-50%,-50%) rotate(0deg);
     }
