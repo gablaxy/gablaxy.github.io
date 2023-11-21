@@ -1,0 +1,149 @@
+:root{
+    background-color: #1f1f1f;
+}
+
+#sun{
+    background-color: #f1c40f;
+    border-radius: 50%;
+    width: 50px;
+    height: 50px;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%,-50%);
+    box-shadow: 0 0 20px 5px #f1c40f;
+}
+
+#mercury{
+    position: absolute;
+    animation: rotation 10s infinite linear;
+    border-radius: 50%;
+    padding: 100px;
+    border: 1px solid silver;
+    left: 50%;
+    top: 50%;
+    transform: translate(-50%,-50%);
+}
+
+#mercury::before{
+    content:'';
+    width: 20px;
+    height: 20px;
+    background-color: #e74c3c;
+    position: absolute;
+    top: -20px;
+    left: -20px;
+    border-radius: 50%;
+    margin: 40px;
+}
+
+
+#venus{
+    position: absolute;
+    animation: rotation 16s infinite linear;
+    border-radius: 50%;
+    padding: 150px;
+    border: 1px solid silver;
+    left: 50%;
+    top: 50%;
+    transform: translate(-50%,-50%);
+}
+
+#venus::before{
+    content:'';
+    width: 20px;
+    height: 20px;
+    background-color: #e67e22;
+    position: absolute;
+    top: -20px;
+    left: -20px;
+    border-radius: 50%;
+    margin: 53px;
+}
+
+#earth{
+    position: absolute;
+    animation: rotation 22s infinite linear;
+    border-radius: 50%;
+    padding: 200px;
+    border: 1px solid silver;
+    left: 50%;
+    top: 50%;
+    transform: translate(-50%,-50%);
+}
+
+#earth::before{
+    content:'';
+    width: 20px;
+    height: 20px;
+    background-color: #3498db;
+    position: absolute;
+    top: -20px;
+    left: -20px;
+    border-radius: 50%;
+    margin: 68px;
+}
+
+#mars{
+    background-color: #e74c3c;
+    border-radius: 50%;
+    width: 10px;
+    height: 10px;
+    position: absolute;
+    top: 50%;
+    left: 30%;
+    transform: translate(-50%,-50%);
+}
+
+#jupiter{
+    background-color: #e67e22;
+    border-radius: 50%;
+    width: 10px;
+    height: 10px;
+    position: absolute;
+    top: 50%;
+    left: 25%;
+    transform: translate(-50%,-50%);
+}
+
+#saturn{
+    background-color: #f1c40f;
+    border-radius: 50%;
+    width: 10px;
+    height: 10px;
+    position: absolute;
+    top: 50%;
+    left: 20%;
+    transform: translate(-50%,-50%);
+}
+
+#uranus{
+    background-color: #3498db;
+    border-radius: 50%;
+    width: 10px;
+    height: 10px;
+    position: absolute;
+    top: 50%;
+    left: 15%;
+    transform: translate(-50%,-50%);
+}
+
+#neptune{
+    background-color: #e67e22;
+    border-radius: 50%;
+    width: 10px;
+    height: 10px;
+    position: absolute;
+    top: 50%;
+    left: 10%;
+    transform: translate(-50%,-50%);
+}
+  
+@keyframes rotation{
+    0%{
+        transform: translate(-50%,-50%) rotate(0deg);
+    }
+    100%{
+        transform: translate(-50%,-50%) rotate(360deg);
+    }
+}
