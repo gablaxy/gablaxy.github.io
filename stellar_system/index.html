@@ -47,9 +47,7 @@
             // When the menu is clicked, it disappears and the planets are no longer highlighted
             menu.addEventListener("click", function(){
                 menu.style.display = "none";
-                planete.forEach(element => {
-                    element.classList.remove("planete_active");
-                });
+                removePA();
             });
 
         </script>
