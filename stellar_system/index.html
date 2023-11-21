@@ -9,33 +9,49 @@
     <body>
         <div class="stars"></div>
         <div class="all">
-                <div class="sun">
-                    <span class="tooltip">Sun</span>
-                </div>
-                <div class="mercury planete">
-                    <span class="tooltip">Mercury</span>
-                </div>
-                <div class="venus planete">
-                    <span class="tooltip">Venus</span>
-                </div>
-                <div class="earth planete">
-                    <span class="tooltip">Earth</span>
-                </div>
-                <div class="mars planete">
-                    <span class="tooltip">Mars</span>
-                </div>
-                <div class="jupiter planete">
-                    <span class="tooltip">Jupiter</span>
-                </div>
-                <div class="saturn planete">
-                    <span class="tooltip">Saturn</span>
-                </div>
-                <div class="uranus planete">
-                    <span class="tooltip">Uranus</span>
-                </div>
-                <div class="neptune planete">
-                    <span class="tooltip">Neptune</span>
-                </div>
+                <div class="Soleil"></div>
+                <div class="Mercure planete"></div>
+                <div class="Venus planete"></div>
+                <div class="Terre planete"></div>
+                <div class="Mars planete"></div>
+                <div class="Jupiter planete"></div>
+                <div class="Saturne planete"></div>
+                <div class="Uranus planete"></div>
+                <div class="Neptune planete"></div>
         </div>
+        <div class="menu">
+            <h1>Menu</h1>
+            <h3 id="nom_planete"></h3>
+        </div>
+        <script type="text/javascript">
+            function removePA() {
+                let planete = document.querySelectorAll(".planete");
+                planete.forEach(element => {
+                    element.classList.remove("planete_active");
+                });
+            }
+
+
+            let planetes = document.querySelectorAll(".planete");
+            let menu = document.querySelector(".menu");
+            
+            planetes.forEach(element => {
+                element.addEventListener("click", function(){
+                    removePA();
+                    menu.style.display = "block";
+                    element.classList.add("planete_active");
+                    document.getElementById("nom_planete").innerHTML = element.classList[0];
+                });
+            });
+
+            // When the menu is clicked, it disappears and the planets are no longer highlighted
+            menu.addEventListener("click", function(){
+                menu.style.display = "none";
+                planete.forEach(element => {
+                    element.classList.remove("planete_active");
+                });
+            });
+
+        </script>
     </body>
 </html>
