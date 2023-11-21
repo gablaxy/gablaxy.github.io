@@ -24,17 +24,23 @@
             <h3 id="nom_planete"></h3>
         </div>
         <script type="text/javascript">
+            let planetes = document.querySelectorAll(".planete");
+            let soleil = document.querySelector(".Soleil");
+            let menu = document.querySelector(".menu");
+
             function removePA() {
-                let planete = document.querySelectorAll(".planete");
-                planete.forEach(element => {
+                planetes.forEach(element => {
                     element.classList.remove("planete_active");
                 });
             }
 
+            // When the sun is clicked, the planets are no longer highlighted
+            soleil.addEventListener("click", function(){
+                removePA();
+                menu.style.display = "block";
+                document.getElementById("nom_planete").innerHTML = "Soleil";
+            });
 
-            let planetes = document.querySelectorAll(".planete");
-            let menu = document.querySelector(".menu");
-            
             planetes.forEach(element => {
                 element.addEventListener("click", function(){
                     removePA();
@@ -44,12 +50,12 @@
                 });
             });
 
-            // When the menu is clicked, it disappears and the planets are no longer highlighted
             menu.addEventListener("click", function(){
                 menu.style.display = "none";
                 removePA();
             });
 
+            
         </script>
     </body>
 </html>
