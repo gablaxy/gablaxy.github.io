@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>La Terre</title>
+        <link rel="stylesheet" href="./style/terre.css">
+    </head>
+    <body>
+        <div class="stars"></div>
+        <a href="./index.html"><button class="retour">Retour</button></a>
+        <div class="all">
+            <div class="Terre"></div>
+            <div class="Lune satellite"></div>
+        </div>
+        <div class="menu">
+            <h1>Menu</h1>
+            <h3 id="nom"></h3>
+        </div>
+        <script type="text/javascript">
+            let objets = document.querySelectorAll(".all > div");
+            let menu = document.querySelector(".menu");
+
+            function removeSA() {
+                objets.forEach(element => {
+                    element.classList.remove("satellite_active");
+                });
+            }
+
+            objets.forEach(element => {
+                element.addEventListener("click", function(){
+                    removeSA();
+                    menu.style.display = "block";
+                    element.classList.add("satellite_active");
+                    document.getElementById("nom").innerHTML = element.classList[0];
+                });
+            });
+
+            menu.addEventListener("click", function(){
+                menu.style.display = "none";
+                removeSA();
+            });
+
+
+
+        </script>
+    </body>
+</html>

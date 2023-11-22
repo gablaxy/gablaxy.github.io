@@ -22,11 +22,13 @@
         <div class="menu">
             <h1>Menu</h1>
             <h3 id="nom_planete"></h3>
+            <a href="" id="zoom_link"><button class="zoom">Zoom</button></a>
         </div>
         <script type="text/javascript">
             let planetes = document.querySelectorAll(".planete");
             let soleil = document.querySelector(".Soleil");
             let menu = document.querySelector(".menu");
+            let zlink = document.getElementById("zoom_link");
 
             function removePA() {
                 planetes.forEach(element => {
@@ -47,6 +49,8 @@
                     menu.style.display = "block";
                     element.classList.add("planete_active");
                     document.getElementById("nom_planete").innerHTML = element.classList[0];
+                    // add an href to the button to zoom to the planet html page
+                    zlink.href = "./" + element.classList[0] + ".html";
                 });
             });
 
@@ -55,7 +59,8 @@
                 removePA();
             });
 
-            
+        
+
         </script>
     </body>
 </html>
