@@ -4,26 +4,21 @@
         <meta charset="UTF-8">
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
         <title>La Terre</title>
-        <link rel="stylesheet" href="./style/terre.css">
-        <link rel="stylesheet" href="./style/common.css">
+        <link rel="stylesheet" href="/style/terre.css">
+        <link rel="stylesheet" href="/style/planete.css">
+        <link rel="stylesheet" href="/style/common.css">
     </head>
     <body>
         <div class="stars"></div>
-        <div id="vars">
-            <div id="energie">Énergie: <span id="energie_num">0</span></div>
-            <div id="materiaux">Matériaux: <span id="materiaux_num">0</span></div>
-        </div>
         <div class="all">
             <div class="Terre"></div>
             <div class="Lune satellite"></div>
         </div>
-        <a href="./index.html" class="retour"><button>Retour</button></a>
         <div class="menu">
             <h1>Menu</h1>
-            <h2 id="nom"></h2>
-            <h3 class="buildings panneau_solaire">Panneau solaire <button class="build" id="panneau_solaire">10 énergies</button></h3>
-            <h3 class="buildings mine">Mine <button class="build" id="mine">10 matériaux</button></h3>
+            <h3 id="nom"></h3>
         </div>
+        <a href="/index.html" class="retour"><button>Retour</button></a>
         <script type="text/javascript">
             let objets = document.querySelectorAll(".all > div");
             let menu = document.querySelector(".menu");
@@ -44,6 +39,6 @@
                 });
             });
         </script>
-        <script src="./main.js"></script>
+        <script src="/main.js"></script>
     </body>
 </html>

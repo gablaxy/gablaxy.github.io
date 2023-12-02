@@ -1,0 +1,71 @@
+.Mars{
+    width: 300px;
+    height: 300px;
+    margin-top: -150px;
+    margin-left: -150px;
+    z-index: 9;
+    /* mars-like gradient */
+    background: radial-gradient(
+        ellipse at center,
+        #c33333 0%,
+        #c33333 25%,
+        #ea7e3b 25%,
+        #ea7e3b 50%,
+        #cc5f37 50%,
+        #cc5f37 75%,
+        #ab4a0d 75%,
+        #ab4a0d 100%
+    );
+    background-clip: padding-box;
+    border: 0 !important;
+    background-position: -28px -103px;
+    background-size: 175%;
+}
+
+.Phobos{
+    width: 604.8px;
+    height: 604.8px;
+    margin-top: -302.4px;
+    margin-left: -302.4px;
+    z-index: 4;
+    -webkit-animation: rotation 60s linear infinite;
+            animation: rotation 60s linear infinite;
+}
+
+.Phobos::before{
+    height: 42px;
+    width: 42px;
+    background: radial-gradient(
+        ellipse at center,
+        rgb(163, 163, 163) 0%,
+        rgb(160, 160, 160) 30%,
+        rgb(175, 175, 175) 60%,
+        rgba(240, 240, 240, 1) 100%
+    );
+    margin-top: -20px;
+    margin-left: -20px;
+}
+
+.Deimos{
+    width: 880.8px;
+    height: 880.8px;
+    margin-top: -440.4px;
+    margin-left: -440.4px;
+    z-index: 3;
+    -webkit-animation: rotation 1200s linear infinite;
+            animation: rotation 1200s linear infinite;
+}
+
+.Deimos::before{
+    height: 42px;
+    width: 42px;
+    background: radial-gradient(
+        ellipse at center,
+        rgb(163, 163, 163) 0%,
+        rgb(160, 160, 160) 30%,
+        rgb(175, 175, 175) 60%,
+        rgba(240, 240, 240, 1) 100%
+    );
+    margin-top: -20px;
+    margin-left: -20px;
+}
