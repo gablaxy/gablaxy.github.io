@@ -15,7 +15,7 @@ html{
     background-size: cover;
     background-attachment: fixed;
     color: var(--texte);
-    font-family: FreePixel;
+    font-family: monospace;
     align-items:center;
 }
 
