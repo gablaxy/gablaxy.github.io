@@ -1,23 +1,19 @@
- <?xml version="1.0" encoding="UTF-8" ?>
 <rss version="2.0">
-
-<channel>
-  <title>gablaxy's website</title>
-  <link>https://gablaxy.github.io/soper/articles/</link>
-  <description>Good website</description>
-  <item>
-    <title>2nd blog post</title>
-    <link>https://gablaxy.github.io/soper/articles/future_space</link>
-    <description>Second</description>
-    <pubDate>November 15, 2023</pubDate>
-  </item>
-  <item>
-    <title>First blog post</title>
-    <link>https://gablaxy.github.io/soper/articles/hello%20world</link>
-    <description>First blog post, I think i will try to relocate the website as soon as possible to be independant totally, at the same time i will try to add more content on this website, for example blog posts, books to read, a showcase of my projects and other things. 
-</description>
-   <pubDate>June 8, 2023</pubDate>
-  </item>
-</channel>
-
+ <channel>
+   <title>gablaxy's website</title>
+   <link>https://gablaxy.github.io/soper/articles/</link>
+   <description>Good website</description>
+   <item>
+     <title>2nd blog post</title>
+     <link>https://gablaxy.github.io/soper/articles/future_space</link>
+     <description>Second</description>
+     <pubDate>November 15, 2023</pubDate>
+   </item>
+   <item>
+     <title>First blog post</title>
+     <link>https://gablaxy.github.io/soper/articles/hello%20world</link>
+     <description>First blog post, I think i will try to relocate the website as soon as possible to be independant totally, at the same time i will try to add more content on this website, for example blog posts, books to read, a showcase of my projects and other things. </description>
+     <pubDate>June 8, 2023</pubDate>
+   </item>
+ </channel>
 </rss> 
