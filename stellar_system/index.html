@@ -4,8 +4,8 @@
         <meta charset="UTF-8">
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
         <title>Stellar system</title>
-        <link rel="stylesheet" href="/style/index.css">
-        <link rel="stylesheet" href="/style/common.css">
+        <link rel="stylesheet" href="./style/index.css">
+        <link rel="stylesheet" href="./style/common.css">
     </head>
     <body>
         <div class="stars"></div>
@@ -50,7 +50,7 @@
                     menu.style.display = "block";
                     element.classList.add("planete_active");
                     document.getElementById("nom_planete").innerHTML = element.classList[0];
-                    zlink.href = "/planetes/" + element.classList[0] + ".html";
+                    zlink.href = "./planetes/" + element.classList[0] + ".html";
                 });
             });
 
