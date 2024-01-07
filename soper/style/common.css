@@ -148,6 +148,11 @@ button:hover {
     height: 25px;
 }
 
+#rss-icon > img{
+    margin-top: 10px;
+    vertical-align: middle;
+}
+
 
 /* Responsive */
 
