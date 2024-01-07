@@ -177,10 +177,11 @@
 }
   
 .spine-author {
+    font-size: 10px;
     position: absolute;
     color: goldenrod;
     bottom: 0px;
-    left: 20%; /* no idea why 20% centers it */
+    left: 0px;
 }
   
 .top {
