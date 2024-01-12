@@ -44,11 +44,13 @@ li{
 .screen{
     position: absolute;
     border-radius: 2% / 25%;
+    border: 10px;
+    border-color: #ccc;
     left: 0;
     top: 0;
     width: 95%;
     height: 88%;
-    padding: 10px;
+    padding: 0px;
     margin: 40px;
     background: linear-gradient(rgba(20, 20, 20, 0) 66%, #20c20e38 33%);
     background-size: 100% 9px;
