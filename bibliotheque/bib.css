@@ -5,7 +5,8 @@
         #ccc 1px, 
         rgba(255, 255, 255, 0.1) 1px, 
         rgba(255, 255, 255, 0.1) 16px
-    ),
+    );
+    background-size: 70px 120px;
     --spine-pyramid: linear-gradient(
       315deg,
       transparent 75%,
