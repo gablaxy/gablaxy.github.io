@@ -9,76 +9,76 @@
             {
                 "title": "I Have No Mouth, and I Must Scream",
                 "author": "Harlan Ellison",
-                "img": "https://upload.wikimedia.org/wikipedia/en/thumb/4/47/IHaveNoMouth.jpg/220px-IHaveNoMouth.jpg"
+                "img": "./couvertures/I_Have_No_Mouth,_and_I_Must_Scream.webp"
             },
             {
                 "title": "Netflix, l'aliénation en série",
                 "author": "Romain Blondeau",
-                "img": "https://img.lemde.fr/2022/09/14/0/0/400/544/664/0/75/0/7798065_1663162778047-netflix-l-alienation-en-serie.jpg"
+                "img": "./couvertures/Netflix,_l_aliénation_en_série.webp"
             }
         ],
         "2021 - 2023": [
             {
                 "title": "Cérès et Vesta",
                 "author": "Greg Egan",
-                "img": "https://m.media-amazon.com/images/I/41aZwjd+sqL._AC_UF1000,1000_QL80_.jpg"
+                "img": "./couvertures/Cérès_et_Vesta.webp"
             },
             {
                 "title": "Petit traité de la décroissance ...",
                 "author": "Serge Latouche",
-                "img": "https://m.media-amazon.com/images/I/717zQNUxPIL._AC_UF1000,1000_QL80_.jpg"
+                "img": "./couvertures/Petit_traité_de_la_décroissance_....webp"
             },
             {
                 "title": "Diaspora",
                 "author": "Greg Egan",
-                "img": "https://i.gr-assets.com/images/S/compressed.photo.goodreads.com/hostedimages/1471047374i/19995406._SY540_.jpg"
+                "img": "./couvertures/Diaspora.webp"
             },
             {
                 "title": "Le problème de Turing",
                 "author": "H. Harrison M. Minsky",
-                "img": "https://images-na.ssl-images-amazon.com/images/I/51dW%2BjViy%2BL._SX210_.jpg"
+                "img": "./couvertures/Le_problème_de_Turing.webp"
             },
             {
                 "title": "L'étoile de Pandore",
                 "author": "Peter F. Hamilton",
-                "img": "https://images-na.ssl-images-amazon.com/images/I/51dW%2BjViy%2BL._SX210_.jpg"
+                "img": "./couvertures/L_étoile_de_Pandore.webp"
             },
             {
                 "title": "L'étoile de Pandore 2",
                 "author": "Peter F. Hamilton",
-                "img": "https://m.media-amazon.com/images/I/51CCNHMQtQL.jpg"
+                "img": "./couvertures/L_étoile_de_Pandore_2.webp"
             },
             {
                 "title": "La Désobéissance civile",
                 "author": "H.D Thoreau",
-                "img": "https://media.hachette.fr/fit-in/780x1280/imgArticle/FAYARD/2022/9782755508246-001-X.jpeg?source=web"
+                "img": "./couvertures/La_Désobéissance_civile.webp"
             },
             {
                 "title": "Pour un municipalisme libertaire",
                 "author": "Murray Bookchin",
-                "img": "https://m.media-amazon.com/images/I/61OHe7Ncn-L._AC_UF1000,1000_QL80_.jpg"
+                "img": "./couvertures/pour_un_municipalisme_libertaire.webp"
             }  
         ],
         "2014 - 2021": [
             {
                 "title": "Fool's Assassin",
                 "author": "Robin Hobb",
-                "img": "https://img3.od-cdn.com/ImageType-100/7723-1/%7B78D08F28-344B-41BD-B4EE-36ACA37DF3D6%7DImg100.jpg"
+                "img": "./couvertures/fool_s_assassin.webp"
             },
             {
                 "title": "Fool's Quest",
                 "author": "Robin Hobb",
-                "img": "https://listeningbooks.s3.eu-west-2.amazonaws.com/public/books/1000x0/14320.jpg"
+                "img": "./couvertures/fool_s_quest.webp"
             },
             {
                 "title": "Assassin's Fate",
                 "author": "Robin Hobb",
-                "img": "https://m.media-amazon.com/images/I/61BRMXoSQyL.jpg"
+                "img": "./couvertures/assassin_s_fate.webp"
             },
             {
                 "title": "L'Homme qui savait la...",
                 "author": "Andrus Kivirähk",
-                "img": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRXE9BjX58Dzc-UNQixBZSnwvAG8V9PJ8RUuQ&usqp=CAU"
+                "img": "./couvertures/l_homme_qui_savait_la....webp"
             }
         ]
     }
