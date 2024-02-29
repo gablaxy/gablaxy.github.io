@@ -1,16 +1,21 @@
 [
     {
         "2024": [
-          {
-            "title": "I Have No Mouth, and I Must Scream",
-            "author": "Harlan Ellison",
-            "img": "https://upload.wikimedia.org/wikipedia/en/thumb/4/47/IHaveNoMouth.jpg/220px-IHaveNoMouth.jpg"
-          },
-          {
-            "title": "Netflix, l'aliénation en série",
-            "author": "Romain Blondeau",
-            "img": "https://img.lemde.fr/2022/09/14/0/0/400/544/664/0/75/0/7798065_1663162778047-netflix-l-alienation-en-serie.jpg"
-          }
+            {
+                "title": "Nous sommes légion",
+                "author": "Dennis E. Taylor",
+                "img": "./couvertures/nous_sommes_legion.webp"
+            },
+            {
+                "title": "I Have No Mouth, and I Must Scream",
+                "author": "Harlan Ellison",
+                "img": "https://upload.wikimedia.org/wikipedia/en/thumb/4/47/IHaveNoMouth.jpg/220px-IHaveNoMouth.jpg"
+            },
+            {
+                "title": "Netflix, l'aliénation en série",
+                "author": "Romain Blondeau",
+                "img": "https://img.lemde.fr/2022/09/14/0/0/400/544/664/0/75/0/7798065_1663162778047-netflix-l-alienation-en-serie.jpg"
+            }
         ],
         "2021 - 2023": [
             {
