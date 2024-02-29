@@ -152,6 +152,7 @@
     transform-style: preserve-3d;
     transform: translateZ(0) rotateY(0);
     transition: transform 1s;
+    color: gold;
   }
   
 .side {
@@ -159,7 +160,6 @@
     border: 2px solid black;
     border-radius: 3px;
     font-weight: bold;
-    color: black;
     text-align: center;
     transform-origin: center left;
 }
@@ -179,7 +179,6 @@
     top: 0px;
     left: 0px;
     font-size: 12px;
-    color: gold;
     writing-mode: vertical-rl;
     text-orientation: mixed;
 }
@@ -187,7 +186,6 @@
 .spine-author {
     font-size: 10px;
     position: absolute;
-    color: goldenrod;
     bottom: 0px;
     left: 0px;
 }

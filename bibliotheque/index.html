@@ -4,143 +4,19 @@
         <title>Bookshelf</title>
         <link rel="stylesheet" href="bib.css" />
         <link rel="stylesheet" href="style.css" />
+        <script src="https://requirejs.org/docs/release/2.3.5/minified/require.js"></script>
     </head>
 
     <body>
             <div id="content">
                 <div id="bookshelves">
                     <h1>Bookshelf</h1>
-                    <ul>
-                        <li class="shelf">
-                            <h2>2024</h2>
-                            <div class="bookshelf">
-                                <div class="book">
-                                    <div class="side spine" style="background-image:var(--spine_newer); background-color:purple;">
-                                        <span class="spine-title"> I Have No Mouth, and I Must Scream </span>
-                                        <span class="spine-author"> Harlan Ellison </span>
-                                    </div>
-                                    <div class="side top"></div>
-                                    <div class="side cover" style="background-image:url('https://upload.wikimedia.org/wikipedia/en/thumb/4/47/IHaveNoMouth.jpg/220px-IHaveNoMouth.jpg')"></div>
-                                </div>
-                                <div class="book">
-                                    <div class="side spine" style="background-image:var(--spine-tartan); background-color:DarkSlateGrey;">
-                                        <span class="spine-title"> Netflix, l'aliénation en série </span>
-                                        <span class="spine-author"> Romain Blondeau </span>
-                                    </div>
-                                    <div class="side top"></div>
-                                    <div class="side cover" style="background-image:url('https://img.lemde.fr/2022/09/14/0/0/400/544/664/0/75/0/7798065_1663162778047-netflix-l-alienation-en-serie.jpg')"></div>
-                                </div>
-                            </div>
-                        </li>
-                        <li class="shelf">
-                            <h2>2021 - 2023</h2>
-                            <div class="bookshelf">
-                                <div class="book">
-                                    <div class="side spine" style="background-image:var(--spine-stairs); background-color:green;">
-                                        <span class="spine-title"> Cérès et Vesta </span>
-                                        <span class="spine-author"> Greg Egan </span>
-                                    </div>
-                                    <div class="side top"></div>
-                                    <div class="side cover" style="background-image:url(https://m.media-amazon.com/images/I/41aZwjd+sqL._AC_UF1000,1000_QL80_.jpg)"></div>
-                                </div>
-                                <div class="book">
-                                    <div class="side spine" style="background-image:var(--spine-tartan); background-color:darkolivegreen;">
-                                        <span class="spine-title"> Petit traité de la décroissance ... </span>
-                                        <span class="spine-author"> Serge Latouche </span>
-                                    </div>
-                                    <div class="side top"></div>
-                                    <div class="side cover" style="background-image:url(https://m.media-amazon.com/images/I/717zQNUxPIL._AC_UF1000,1000_QL80_.jpg)"></div>
-                                </div>
-                                <div class="book">
-                                    <div class="side spine" style="background-image:var(--spine-argyle); background-color:blue;">
-                                        <span class="spine-title"> Diaspora </span>
-                                        <span class="spine-author"> Greg Egan </span>
-                                    </div>
-                                    <div class="side top"></div>
-                                    <div class="side cover" style="background-image:url(https://i.gr-assets.com/images/S/compressed.photo.goodreads.com/hostedimages/1471047374i/19995406._SY540_.jpg)"></div>
-                                </div>
-                                <div class="book">
-                                    <div class="side spine" style="background-image:var(--spine-tartan); background-color:DarkOrchid;">
-                                        <span class="spine-title"> Le problème de Turing </span>
-                                        <span class="spine-author"> H. Harrison M. Minsky </span>
-                                    </div>
-                                    <div class="side top"></div>
-                                    <div class="side cover" style="background-image:url(https://images-na.ssl-images-amazon.com/images/I/51dW%2BjViy%2BL._SX210_.jpg)"></div>
-                                </div>
-                                <div class="book">
-                                    <div class="side spine" style="background-image:var(--spine-pyramid); background-color:CornflowerBlue;">
-                                        <span class="spine-title"> L'étoile de Pandore </span>
-                                        <span class="spine-author"> Peter F. Hamilton </span>
-                                    </div>
-                                    <div class="side top"></div>
-                                    <div class="side cover" style="background-image:url(https://m.media-amazon.com/images/I/81mFWXTEWnL._AC_UF1000,1000_QL80_.jpg)"></div>
-                                </div>
-                                <div class="book">
-                                <div class="side spine" style="background-image:var(--spine-argyle); background-color:DarkOliveGreen;">
-                                        <span class="spine-title"> L'étoile de Pandore 2 </span>
-                                        <span class="spine-author"> Peter F. Hamilton </span>
-                                    </div>
-                                    <div class="side top"></div>
-                                    <div class="side cover" style="background-image:url(https://m.media-amazon.com/images/I/51CCNHMQtQL.jpg)"></div>
-                                </div>
-                                <div class="book">
-                                    <div class="side spine" style="background-image:var(--spine-stairs); background-color:green;">
-                                        <span class="spine-title"> La Désobéissance civile </span>
-                                        <span class="spine-author"> H.D Thoreau </span>
-                                    </div>
-                                    <div class="side top"></div>
-                                    <div class="side cover" style="background-image:url('https://media.hachette.fr/fit-in/780x1280/imgArticle/FAYARD/2022/9782755508246-001-X.jpeg?source=web')"></div>
-                                </div>
-                                <div class="book">
-                                    <div class="side spine" style="background-image:var(--spine-tartan); background-color:red;">
-                                        <span class="spine-title"> Pour un municipalisme libertaire </span>
-                                        <span class="spine-author"> Murray Bookchin </span>
-                                    </div>
-                                    <div class="side top"></div>
-                                    <div class="side cover" style="background-image:url('https://m.media-amazon.com/images/I/61OHe7Ncn-L._AC_UF1000,1000_QL80_.jpg')"></div>
-                                </div>
-                            </div>
-                        </li>
-                        <li class="shelf">
-                            <h2>2014 - 2021</h2>
-                            <div class="bookshelf">
-                                <div class="book">
-                                    <div class="side spine" style="background-image:var(--spine-pyramid); background-color:darkgreen;">
-                                        <span class="spine-title"> Fool's Assassin </span>
-                                        <span class="spine-author"> Robin Hobb </span>
-                                    </div>
-                                    <div class="side top"></div>
-                                    <div class="side cover" style="background-image:url(https://img3.od-cdn.com/ImageType-100/7723-1/%7B78D08F28-344B-41BD-B4EE-36ACA37DF3D6%7DImg100.jpg)"></div>
-                                </div>
-                                <div class="book">
-                                    <div class="side spine" style="background-image:var(--spine-argyle); background-color:black;">
-                                        <span class="spine-title"> Fool's Quest </span>
-                                        <span class="spine-author"> Robin Hobb </span>
-                                    </div>
-                                    <div class="side top"></div>
-                                    <div class="side cover" style="background-image:url(https://listeningbooks.s3.eu-west-2.amazonaws.com/public/books/1000x0/14320.jpg)"></div>
-                                </div>
-                                <div class="book">
-                                    <div class="side spine" style="background-image:var(--spine-tartan); background-color:darkblue;">
-                                        <span class="spine-title"> Assassin's Fate </span>
-                                        <span class="spine-author"> Robin Hobb </span>
-                                    </div>
-                                    <div class="side top"></div>
-                                    <div class="side cover" style="background-image:url(https://m.media-amazon.com/images/I/61BRMXoSQyL.jpg)"></div>
-                                </div>
-                                <div class="book">
-                                    <div class="side spine" style="background-image:var(--spine-stairs); background-color:DarkOliveGreen;">
-                                        <span class="spine-title"> L'Homme qui savait la ... </span>
-                                        <span class="spine-author"> Andrus Kivirähk </span>
-                                    </div>
-                                    <div class="side top"></div>
-                                    <div class="side cover" style="background-image:url(https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRXE9BjX58Dzc-UNQixBZSnwvAG8V9PJ8RUuQ&usqp=CAU)"></div>
-                                </div>
-                            </div>
-                        </li>
+                    <ul id="insert">
+
                     </ul>
                 </div>
             </div>
             <div class="screen"></div>
+            <script src="setupbib.js"></script>
       </body>
 </html>
