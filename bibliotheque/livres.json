@@ -2,6 +2,11 @@
     {
         "2024": [
             {
+                "title": "Nous sommes nombreux",
+                "author": "Dennis E. Taylor",
+                "img": "./couvertures/"
+            },
+            {
                 "title": "Nous sommes légion",
                 "author": "Dennis E. Taylor",
                 "img": "./couvertures/nous_sommes_legion.webp"
