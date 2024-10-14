@@ -169,26 +169,22 @@ button:hover {
 }
 
 
-/* WebKit browsers (Chrome, Safari) */
-::-webkit-scrollbar {
-    width: 12px; /* Width of the scrollbar */
-}
-
-::-webkit-scrollbar-track {
-    background: #3d0101; /* Background of the scrollbar track */
-}
-
-::-webkit-scrollbar-thumb {
-    background: rgb(255, 0, 0); /* Color of the scrollbar thumb */
-    border-radius: 6px; /* Rounded corners for the scrollbar thumb */
-}
-
-::-webkit-scrollbar-thumb:hover {
-    background: #555; /* Color of the scrollbar thumb on hover */
-}
-
-/* Firefox */
-html {
-    scrollbar-width: thin; /* Width of the scrollbar */
-    scrollbar-color: #f40303 #3d0101; /* Color of the scrollbar thumb and track */
-}
+/* Works on Firefox */
+* {
+    scrollbar-color: var(--scrollbarout) var(--scrollbarin);
+  }
+  
+  /* Works on Chrome, Edge, and Safari */
+  *::-webkit-scrollbar {
+    width: 12px;
+  }
+  
+  *::-webkit-scrollbar-track {
+    background: var(--scrollbarin);
+  }
+  
+  *::-webkit-scrollbar-thumb {
+    background-color: var(--scrollbarout);
+    border-radius: 20px;
+    border: 3px solid var(--scrollbarin);
+  }
