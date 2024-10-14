@@ -171,6 +171,7 @@ button:hover {
 
 /* Works on Firefox */
 * {
+    scrollbar-width: thin;
     scrollbar-color: var(--scrollbarout) var(--scrollbarin);
   }
   
