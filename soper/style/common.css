@@ -25,6 +25,10 @@ p{
     border-radius: 10px;
 }
 
+#canvas > p{
+    padding-left: 20px;
+}
+
 #heading{
     font-family: Title;
     text-align: center;
