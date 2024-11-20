@@ -4,12 +4,12 @@
             {
                 "title": "Le ministère du futur",
                 "author": "Kim Stanley Robinson",
-                "img": "./couvertures/Le_ministere_du_futur.webp"
+                "img": "https://www.bragelonne.fr/media/cache/cat_w272/22/9791028121822.png"
             },
             {
                 "title": "Mars la rouge",
                 "author": "Kim Stanley Robinson",
-                "img": "./couvertures/Mars_la_rouge.webp"
+                "img": "https://media.senscritique.com/media/000012799330/0/mars_la_rouge.jpg"
             },
             {
                 "title": "Nous sommes nombreux",
@@ -19,39 +19,39 @@
             {
                 "title": "Nous sommes légion",
                 "author": "Dennis E. Taylor",
-                "img": "./couvertures/nous_sommes_legion.webp"
+                "img": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQ4DdhPSZvBDMSA5Cu6JXDrgn4w0U6cc1E1hA&s"
             },
             {
                 "title": "I Have No Mouth, and I Must Scream",
                 "author": "Harlan Ellison",
-                "img": "./couvertures/I_Have_No_Mouth,_and_I_Must_Scream.webp"
+                "img": "https://upload.wikimedia.org/wikipedia/en/thumb/4/47/IHaveNoMouth.jpg/220px-IHaveNoMouth.jpg"
             },
             {
                 "title": "Netflix, l'aliénation en série",
                 "author": "Romain Blondeau",
-                "img": "./couvertures/Netflix,_l_aliénation_en_série.webp"
+                "img": "https://img.lemde.fr/2022/09/14/0/0/400/544/664/0/75/0/7798065_1663162778047-netflix-l-alienation-en-serie.jpg"
             }
         ],
         "2021 - 2023": [
             {
                 "title": "Cérès et Vesta",
                 "author": "Greg Egan",
-                "img": "./couvertures/Cérès_et_Vesta.webp"
+                "img": "https://images-na.ssl-images-amazon.com/images/S/compressed.photo.goodreads.com/books/1466989711i/29887374.jpg"
             },
             {
                 "title": "Petit traité de la décroissance ...",
                 "author": "Serge Latouche",
-                "img": "./couvertures/Petit_traité_de_la_décroissance_....webp"
+                "img": "https://media.hachette.fr/fit-in/780x1280/imgArticle/FAYARD/2008/9782755500073-T.jpg?source=web"
             },
             {
                 "title": "Diaspora",
                 "author": "Greg Egan",
-                "img": "./couvertures/Diaspora.webp"
+                "img": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTR5GioRriEzctgepfjCvOEDkUUBKuFMZeIIw&s"
             },
             {
                 "title": "Le problème de Turing",
                 "author": "H. Harrison M. Minsky",
-                "img": "./couvertures/Le_problème_de_Turing.webp"
+                "img": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQdMj64OT8ATA8vcV0FxGLXPl53znP5l43q4A&s"
             },
             {
                 "title": "L'étoile de Pandore",
@@ -61,39 +61,39 @@
             {
                 "title": "L'étoile de Pandore 2",
                 "author": "Peter F. Hamilton",
-                "img": "./couvertures/L_étoile_de_Pandore_2.webp"
+                "img": "https://m.media-amazon.com/images/I/81-1tQrjOIL.jpg"
             },
             {
                 "title": "La Désobéissance civile",
                 "author": "H.D Thoreau",
-                "img": "./couvertures/La_Désobéissance_civile.webp"
+                "img": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSjBJGn4NG80B_0f0omdqaeZ5Zkpqi4f5XVlw&s"
             },
             {
                 "title": "Pour un municipalisme libertaire",
                 "author": "Murray Bookchin",
-                "img": "./couvertures/Pour_un_municipalisme_libertaire.webp"
+                "img": "https://couvertures.laprocure.com/procure/product/images_8/344268.webp"
             }  
         ],
         "2014 - 2021": [
             {
                 "title": "Fool's Assassin",
                 "author": "Robin Hobb",
-                "img": "./couvertures/Fool_s_Assassin.webp"
+                "img": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSpQifcL1e819PpqrNUnIIVS5pUcyMkvyq0Og&s"
             },
             {
                 "title": "Fool's Quest",
                 "author": "Robin Hobb",
-                "img": "./couvertures/Fool_s_Quest.webp"
+                "img": "https://products-images.di-static.com/image/robin-hobb-fitz-and-the-fool/9780007444243-200x303-1.jpg"
             },
             {
                 "title": "Assassin's Fate",
                 "author": "Robin Hobb",
-                "img": "./couvertures/Assassin_s_Fate.webp"
+                "img": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSJpYPSZFUwc-jVKDqR5-1DwsCVPNVo6lHQ5g&s"
             },
             {
                 "title": "L'Homme qui savait la...",
                 "author": "Andrus Kivirähk",
-                "img": "./couvertures/L_Homme_qui_savait_la....webp"
+                "img": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcT748cGQgUxHvgo3NAxLiibuqYC6TCUvLgXLw&s"
             }
         ]
     }
