@@ -1,5 +1,5 @@
-let list_li = ["future_space","hello world"];
-let list_date = ["October 13, 2024","July 8, 2023"];
+let list_li = ["framework","future_space","hello world"];
+let list_date = ["November 24, 2024","October 13, 2024","July 8, 2023"];
 let articles = document.getElementById("liste_arti");
 
 for(let i = 0; i < list_li.length; i++){
