@@ -25,6 +25,24 @@ p{
     border-radius: 10px;
 }
 
+/* Starry background */
+.stars{
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    background-image: 
+        radial-gradient(2px 2px at 20px 30px, #eee, rgba(0,0,0,0)),
+        radial-gradient(2px 2px at 48px 50px, #eee, rgba(0,0,0,0)),
+        radial-gradient(2px 2px at 84px 16px, #eee, rgba(0,0,0,0)),
+        radial-gradient(2px 2px at 98px 123px, #eee, rgba(0,0,0,0)),
+        radial-gradient(2px 2px at 195px 108px, #eee, rgba(0,0,0,0)),
+        radial-gradient(2px 2px at 140px 75px, #eee, rgba(0,0,0,0)),
+        radial-gradient(2px 2px at 108px 135px, #eee, rgba(0,0,0,0));
+    background-size: 200px 200px;
+    background-repeat: repeat;
+    z-index: -2;
+}
+
 #canvas > p{
     padding-left: 20px;
 }
