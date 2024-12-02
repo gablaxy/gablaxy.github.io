@@ -41,6 +41,12 @@ p{
     background-size: 200px 200px;
     background-repeat: repeat;
     z-index: -2;
+    animation: flicker 5s infinite;
+}
+
+@keyframes flicker {
+    0%, 100% { opacity: 1; }
+    50% { opacity: 0.5; }
 }
 
 #canvas > p{
