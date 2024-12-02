@@ -17,8 +17,6 @@ html{
     background-repeat: repeat;
     background-size: cover;
     */
-    background: radial-gradient(ellipse at center, #1C2837 0%, #050608 100%);
-    background-attachment: fixed;
     color: var(--texte);
     font-family: monospace;
     align-items:center;

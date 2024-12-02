@@ -25,6 +25,11 @@ p{
     border-radius: 10px;
 }
 
+body{
+    background: radial-gradient(ellipse at center, #1C2837 0%, #050608 100%);
+    background-attachment: fixed;
+}
+
 /* Starry background */
 .stars{
     position: absolute;
@@ -38,8 +43,9 @@ p{
         radial-gradient(2px 2px at 195px 108px, #eee, rgba(0,0,0,0)),
         radial-gradient(2px 2px at 140px 75px, #eee, rgba(0,0,0,0)),
         radial-gradient(2px 2px at 108px 135px, #eee, rgba(0,0,0,0));
-    background-repeat: repeat;
+    
     background-size: cover;
+    background-repeat: repeat;
     z-index: -2;
     animation: flicker 5s infinite;
 }
