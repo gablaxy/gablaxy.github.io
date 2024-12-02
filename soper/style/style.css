@@ -15,8 +15,9 @@ html{
     /* background-image: url(../img/back_space.webp); 
     background-repeat: repeat;
     background-size: cover;
-    background-attachment: fixed;
     */
+    background: radial-gradient(ellipse at center, #1C2837 0%, #050608 100%);
+    background-attachment: fixed;
     color: var(--texte);
     font-family: monospace;
     align-items:center;
