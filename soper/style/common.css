@@ -189,7 +189,12 @@ button:hover {
     height: 25px;
 }
 
-#rss-icon > img, #github-icon > img{
+#rss-icon > img{
+    margin-top: 10px;
+    vertical-align: middle;
+}
+
+#github-icon > img{
     margin-top: 10px;
     vertical-align: middle;
 }
