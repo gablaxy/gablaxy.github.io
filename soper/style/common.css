@@ -37,19 +37,23 @@ body{
     position: absolute;
     width: 100%;
     height: 100%;
-    z-index: -2;
-}
+    background-image: 
+        radial-gradient(2px 2px at 20px 30px, #eee, rgba(0,0,0,0)),
+        radial-gradient(2px 2px at 48px 50px, #eee, rgba(0,0,0,0)),
+        radial-gradient(2px 2px at 84px 16px, #eee, rgba(0,0,0,0)),
+        radial-gradient(2px 2px at 98px 123px, #eee, rgba(0,0,0,0)),
+        radial-gradient(2px 2px at 195px 108px, #eee, rgba(0,0,0,0)),
+        radial-gradient(2px 2px at 140px 75px, #eee, rgba(0,0,0,0)),
+        radial-gradient(2px 2px at 108px 135px, #eee, rgba(0,0,0,0)),
+        radial-gradient(2px 2px at 60px 90px, #eee, rgba(0,0,0,0)),
+        radial-gradient(2px 2px at 180px 40px, #eee, rgba(0,0,0,0)),
+        radial-gradient(2px 2px at 160px 160px, #eee, rgba(0,0,0,0));
 
-.star {
-    position: absolute;
-    width: 4px;
-    height: 4px;
-    background-color: #eee;
-    border-radius: 50%;
+    background-size: 200px 200px;
+    background-repeat: repeat;
+    z-index: -2;
     animation: flicker 5s infinite;
 }
-
-
 
 @keyframes flicker {
     0%, 100% { opacity: 1; }
