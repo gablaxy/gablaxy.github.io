@@ -23,11 +23,7 @@ img {
   margin-top: 0;
 }
 
-li{
-    margin: 5px;
-}
-
-ul{
+li, ul{
     margin: 5px;
 }
 
