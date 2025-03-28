@@ -39,10 +39,7 @@ fetch('./livres.json')
         let books = data[0];
         let everything = '';
 
-        let years = Object.keys(books);
-
-        for (let i = 0; i < years.length; i++) {
-            let year = years[i];
+        for (let year in books) {
             everything += generateYearTemplate(year, books[year]);
         }
 
