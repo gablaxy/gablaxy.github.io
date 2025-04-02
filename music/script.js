@@ -27,7 +27,7 @@ async function loadMusic() {
 
             const artistElement = document.createElement('span');
             artistElement.className = 'song-artist';
-            artistElement.textContent = ` - ${music.artist}`;
+            artistElement.textContent = `${music.artist}`;
             
             titleArtistContainer.appendChild(titleElement);
             titleArtistContainer.appendChild(artistElement);            

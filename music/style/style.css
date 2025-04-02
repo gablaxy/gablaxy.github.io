@@ -4,11 +4,11 @@
 }
 
 :root {
-    --background: #1e3a5f; /* Dark blue background */
+    --background: #1e3a5f;
     --boxes: #000000AF;
-    --titres: #4fc3f7; /* Light blue for titles */
-    --hover: #81d4fa; /* Hover effect */
-    --texte: #b3e5fc; /* Light blue for text */
+    --titres: #4fc3f7;
+    --hover: #81d4fa;
+    --texte: #b3e5fc;
     --separations: #4fc3f7;
     --scrollbarin: #4fc3f7;
     --scrollbarout: #81d4fa;
@@ -27,10 +27,11 @@ body {
     overflow-y: auto;
 }
 
+
+/* Titre */
 header {
     text-align: center;
     padding: 1rem;
-    color: var(--texte);
 }
 
 h1 {
@@ -38,45 +39,54 @@ h1 {
     color: var(--titres);
 }
 
+/* conteneur liste chansons */
 .container {
-    max-width: 800px;
+    backdrop-filter: blur(16px) saturate(180%);
+    -webkit-backdrop-filter: blur(16px) saturate(180%);
+    background-color: rgba(17, 25, 40, 0.75);
+    border: 1px solid rgba(255, 255, 255, 0.125);
+    border-radius: 12px;
+    padding: 2rem;
     margin: 2rem auto;
-    padding: 1rem;
-    background: var(--boxes);
-    border-radius: 10px;
-    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+    max-width: 800px;
 }
 
+/* interface ligne chanson */
 .song {
-    display: flex;
+    padding: 1.2rem;
+    margin: 1rem 0;
+    background: rgba(255, 255, 255, 0.05);
+    border-radius: 8px;
+    transition: all 0.3s ease;
+    display: grid;
+    grid-template-columns: 1fr auto;
     align-items: center;
-    justify-content: space-between;
-    padding: .5rem;
-    border-bottom: 1px solid var(--separations);
+    gap: 1rem;
 }
-
 .song:last-child {
     border-bottom: none;
 }
 
 .title-artist {
     display: flex;
-    align-items: center;
-    font-size: 1.2rem;
-    color: var(--texte);
+    flex-direction: column;
+    gap: 0.3rem;
 }
 
 .song-title {
-    font-weight: bold;
-    margin-right: 0.5rem;
+    font-size: 1.1rem;
+    font-weight: 600;
+    color: var(--titres);
 }
 
 .song-artist {
-    font-style: italic;
-    color: var(--separations);
+    font-size: 0.9rem;
+    color: var(--texte);
+    opacity: 0.8;
 }
 
 
+/* le boutton le plus important */
 .play-button {
     background-color: transparent;
     border: none;
@@ -85,10 +95,7 @@ h1 {
     display: flex;
     align-items: center;
     justify-content: center;
-    font-size: 1.2rem;
-    cursor: pointer;
     transition: transform 0.2s;
-    padding: 0;
 }
 
 .play-button svg {
@@ -103,7 +110,7 @@ h1 {
     transform: scale(1.05);
 }
 
-/* Scrollbar styling */
+/* la barre de scroll je suis trop cool */
 * {
     scrollbar-width: thin;
     scrollbar-color: var(--scrollbarout) var(--scrollbarin);
@@ -121,4 +128,43 @@ h1 {
     background-color: var(--scrollbarout);
     border-radius: 20px;
     border: 3px solid var(--scrollbarin);
+}
+
+/* l'animation mdr */
+@keyframes pulse {
+    0% { opacity: 0.6; transform: scale(0.95); }
+    50% { opacity: 1; transform: scale(1); }
+    100% { opacity: 0.6; transform: scale(0.95); }
+}
+
+
+/* pas sûr que ça marche ça de ouf mais bon */
+.loading {
+    display: flex;
+    justify-content: center;
+    padding: 2rem;
+    animation: pulse 1.5s infinite;
+}
+
+.loading::after {
+    content: "♫";
+    font-size: 2rem;
+    color: var(--titres);
+}
+
+/* jcrois pour tel ça fait le taff */
+@media (max-width: 768px) {
+    .container {
+        margin: 1rem;
+        padding: 1rem;
+    }
+    
+    .song {
+        grid-template-columns: 1fr;
+        padding: 1rem;
+    }
+    
+    .audio-player {
+        padding: 1rem;
+    }
 }
