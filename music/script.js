@@ -64,9 +64,30 @@ async function loadMusic() {
             musicElement.appendChild(playButton);
             musicContainer.appendChild(musicElement);
         });
+
+        updateRecommendedSong(musicData);
     } catch (error) {
         console.error('Error loading music:', error);
     }
 }
 
 document.addEventListener('DOMContentLoaded', loadMusic);
+
+function updateRecommendedSong(songs) {
+    const randomIndex = Math.floor(Math.random() * songs.length);
+    const recommendedSong = songs[randomIndex];
+    
+    document.querySelector('.recommended-song .song-title').textContent = recommendedSong.title;
+    document.querySelector('.recommended-song .song-artist').textContent = recommendedSong.artist;
+    
+    // Update play button functionality
+    const recommendedPlayButton = document.querySelector('.recommended-song .play-button');
+    recommendedPlayButton.addEventListener('click', () => {
+        const audioPlayer = document.getElementById('audio');
+        audioPlayer.src = recommendedSong.audioUrl;
+        audioPlayer.play();
+        
+        document.getElementById('current-song').textContent = 
+            `${recommendedSong.title} - ${recommendedSong.artist}`;
+    });
+}

@@ -168,3 +168,60 @@ h1 {
         padding: 1rem;
     }
 }
+
+/* Recommended Container */
+.recommended-container {
+    backdrop-filter: blur(16px) saturate(180%);
+    -webkit-backdrop-filter: blur(16px) saturate(180%);
+    background-color: rgba(17, 25, 40, 0.75);
+    border: 1px solid rgba(255, 255, 255, 0.125);
+    border-radius: 12px;
+    padding: 1.5rem;
+    margin: 2rem auto;
+    max-width: 800px;
+}
+
+.recommended-header {
+    display: flex;
+    align-items: center;
+    gap: 0.8rem;
+    margin-bottom: 1rem;
+    padding-bottom: 1rem;
+    border-bottom: 1px solid var(--separations);
+}
+
+.recommended-header h2 {
+    font-family: Title;
+    color: var(--hover);
+    font-size: 1.4rem;
+    margin: 0;
+}
+
+.recommended-icon {
+    width: 24px;
+    height: 24px;
+    fill: var(--titres);
+}
+
+/* Use existing song styles */
+.recommended-song {
+    margin: 0;
+    background: rgba(255, 255, 255, 0.05) !important;
+    grid-template-columns: 1fr auto;
+}
+
+@media (max-width: 768px) {
+    .recommended-container {
+        margin: 1rem;
+        padding: 1rem;
+    }
+    
+    .recommended-header h2 {
+        font-size: 1.2rem;
+    }
+    
+    .recommended-song {
+        grid-template-columns: 1fr;
+        padding: 1rem;
+    }
+}
