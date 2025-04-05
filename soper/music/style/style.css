@@ -1,0 +1,179 @@
+@font-face {
+    font-family: Title;
+    src: url(/music/style/fonts/wayfarers-toy-box.ttf);
+}
+
+:root {
+    --background: #1e3a5f;
+    --boxes: #000000AF;
+    --titres: #4fc3f7;
+    --hover: #81d4fa;
+    --texte: #b3e5fc;
+    --separations: #4fc3f7;
+    --scrollbarin: #4fc3f7;
+    --scrollbarout: #81d4fa;
+}
+
+html, body {
+    font-family: monospace;
+    color: var(--texte);
+    background: radial-gradient(ellipse at center, #1e3a5f 0%, #0d1b2a 100%);
+    background-attachment: fixed;
+    overflow-x: hidden;
+    overflow-y: auto;
+    align-items: center;
+}
+
+header, h1 {
+    text-align: center;
+    font-family: Title;
+    color: var(--titres);
+    padding: 1rem;
+}
+
+.container, .recommended-container {
+    backdrop-filter: blur(16px) saturate(180%);
+    -webkit-backdrop-filter: blur(16px) saturate(180%);
+    background-color: rgba(17, 25, 40, 0.75);
+    border: 1px solid rgba(255, 255, 255, 0.125);
+    border-radius: 12px;
+    margin: 2rem auto;
+    padding: 2rem;
+    max-width: 800px;
+}
+
+.song, .recommended-song {
+    display: grid;
+    grid-template-columns: 1fr auto;
+    align-items: center;
+    gap: 1rem;
+    padding: 1.2rem;
+    margin: 1rem 0;
+    background: rgba(255, 255, 255, 0.05);
+    border-radius: 8px;
+    transition: all 0.3s ease;
+}
+
+.song:last-child {
+    border-bottom: none;
+}
+
+.title-artist {
+    display: flex;
+    flex-direction: column;
+    gap: 0.3rem;
+}
+
+.song-title {
+    font-size: 1.1rem;
+    font-weight: 600;
+    color: var(--titres);
+}
+
+.song-artist {
+    font-size: 0.9rem;
+    color: var(--texte);
+    opacity: 0.8;
+}
+
+.play-button {
+    background-color: transparent;
+    border: none;
+    width: 40px;
+    height: 40px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    transition: transform 0.2s;
+}
+
+.play-button svg {
+    fill: var(--texte);
+}
+
+.play-button:hover {
+    transform: scale(1.1);
+}
+
+.play-button:active {
+    transform: scale(1.05);
+}
+
+.recommended-header, .music-header {
+    display: flex;
+    align-items: center;
+    gap: 0.8rem;
+    margin-bottom: 1rem;
+    padding-bottom: 1rem;
+    border-bottom: 1px solid var(--separations);
+}
+
+.recommended-header h2, .music-header h2 {
+    font-family: Title;
+    color: var(--hover);
+    font-size: 1.4rem;
+    margin: 0;
+}
+
+.recommended-icon {
+    width: 24px;
+    height: 24px;
+    fill: var(--titres);
+}
+
+.loading {
+    display: flex;
+    justify-content: center;
+    padding: 2rem;
+    animation: pulse 1.5s infinite;
+}
+
+.loading::after {
+    content: "♫";
+    font-size: 2rem;
+    color: var(--titres);
+}
+
+@keyframes pulse {
+    0%, 100% { opacity: 0.6; transform: scale(0.95); }
+    50% { opacity: 1; transform: scale(1); }
+}
+
+* {
+    scrollbar-width: thin;
+    scrollbar-color: var(--scrollbarout) var(--scrollbarin);
+}
+
+*::-webkit-scrollbar {
+    width: 12px;
+}
+
+*::-webkit-scrollbar-track {
+    background: var(--scrollbarin);
+}
+
+*::-webkit-scrollbar-thumb {
+    background-color: var(--scrollbarout);
+    border-radius: 20px;
+    border: 3px solid var(--scrollbarin);
+}
+
+@media (max-width: 768px) {
+    .container, .recommended-container {
+        margin: 1rem;
+        padding: 1rem;
+    }
+
+    .song, .recommended-song {
+        grid-template-columns: 1fr;
+        padding: 1rem;
+    }
+
+    .recommended-header h2 {
+        font-size: 1.2rem;
+    }
+
+    .audio-player {
+        padding: 1rem;
+    }
+}
