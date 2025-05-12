@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <meta name="darkreader-lock">
+    
+    <link rel="icon" type="favicon" href="/soper/main_ressources/img/favicon.ico">
+    
+    <link rel="stylesheet" type="text/css" href="/soper/main_ressources/style/style.css">
+    <link rel="stylesheet" type="text/css" href="/soper/main_ressources/style/article.css">
+    <title>Blog : Weather Satellites, they're so fun</title>
+</head>
+<body>
+    <div class="stars"></div>
+    <header>
+        <div id="heading">   
+            <h3>Blog</h3>
+        </div>
+    </header>
+    <div id="canvas" class="box" style="max-width: 2000px;">
+        <div id="main">
+            <pre style="white-space: nowrap;"><h3>Radio and satellite stuff</h3><p>     <date>May 12, 2025</date></p></pre>
+            <p>
+                Disclaimer: I don't know anything about radio, I'm just recounting something funny I did, expect some errors.
+
+                Hello, today i'm going to talk about a little experiment I did, a few months ago I stumbled upon some youtube videos on the topic of radiocommunication and more specificially communication with satellite, the amazing youtube channel was saveitforparts, I instantly knew I had to try something like that. So at first I made some research to find what to buy to get data from weather satellite easily (that's the simplest and most interesting category of satellite to get data from), It wasn't that expensive (~$60) but i wasn't going to spend that just for starting, so I did some more research to find cheaper alternative and I found websdr. WebSDR is a technology that allow people with the antenna and all the equipment to deploy a web server that makes all this equipment available to everyone going to their website. One problem is that it's more used for radio frequencies that aren't near the ones that weather satellites uses for sending data down to earth, so I embarked on a quest to find one website with the radio frequencies I wanted (between 136 and 138 Mhz) and after a few searches I found a swiss website with what I wanted (http://hb9re.ddns.net:8080/).
+                The frequencies are divided and the range I want is at the bottom of the selection dropdown menu, once that was done I just had to find if that was possible to use it to get satellite data...
+                <img src="/soper/articles/img/satellite_reception/sat_web_sdr.webp" alt="websdr" style="width: 100%; max-width: 800px; height: auto; margin: 0 auto; display: block;">
+                So I also found online some information on satellite pathes (https://www.n2yo.com/?s=33591), NOAA satellites orbit above europe two times a day as all other polar orbiting low earth orbit satellites. I just waited for the satellites to arrive and I saw the signal appear on the waterfall, fortunatly there was a handy record button available directly on the website so I could record the signal and get a file directly on my computer, I took me multiple tries to get a good signal, playing with the different settings, but I finally got a signal good enough to give me a glimpse of an image. I used satdump to decode the signal, it's a really good software.
+                <img src="/soper/articles/img/satellite_reception/first_image.webp" alt="websdr" style="width: 100%; max-width: 800px; height: auto; margin: 0 auto; display: block;">
+                I'm happy with the image I got, it's not perfect but it's a good start, if we take into account the noise in the recording and the fact that I used a random antenna on a website that doesn't point directly to the satellite, It's even impressive that I got something at all.
+                This article was writtent a few months after all the events you read about, now I'm waiting for my antenna and receiver to arrive, I hope that I will be able to get better images and do other fun experiments with it. I will keep you updated on the blog if I get something interesting.
+            </p>
+        </div>
+    </div>
+    <footer>
+    </footer> 
+
+    <script src="https://static.sekandocdn.net/static/feednami/feednami-client-v1.1.js"></script>
+    <script src="/soper/main_ressources/scripts/nav.js"></script>
+    <script src="/soper/main_ressources/scripts/footer.js"></script>
+</body>
+</html>
+
