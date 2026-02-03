@@ -50,18 +50,15 @@ fetch('./livres.json')
 });
 
 const opposedColors = [
-    ["#353642","#ECCB4F"],
     ["#ECCB4F","#353642"],
-    ["#4FEC86","#C25350"],
-    ["#6597FF","#C22555"],
-    ["#C22555","#65976B"],
-    ["#F0D500","#4025C2"],
-    ["#C2000C","white"],
-    ["black","#F0D500"],
-    ["black","white"],
-    ["black","yellow"],
+    ["#6597FF","#741532"],
+    ["#e6cc09","#311f8a"],
+    ["#23156c","#dcc303"],
+    ["black","lightgreen"],
+    ["black","#00A1F1"],
     ["white", "red"],
-    ["white", "black"],
+    ["black","white"],
+    ["red", "white"]
 ];
 
 const spine_style = [
